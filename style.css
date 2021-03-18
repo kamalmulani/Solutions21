@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* STarry bg */
 
 body {
@@ -747,7 +752,7 @@ img {
 /* navbar */
 
 nav {
-  background: white;
+  background: transparent;
   padding: 1rem 1.5rem;
   margin-top: -6px;
   transition: var(--transition);
@@ -785,13 +790,13 @@ nav {
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
-  color: black;
+  color: white;
 }
 .nav-toggle:hover {
   color: var(--clr-secondary);
 }
 .logo {
-  height: 70px;
+  height: 50px;
 }
 .links-container {
   height: 0;
@@ -864,3 +869,95 @@ nav {
     color: var(--clr-white);
   }
 }
+
+/* Footer */
+.footer {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+}
+.contact-details {
+  margin: auto;
+}
+.contact-details .data {
+  height: fit-content;
+}
+.contact-details h3,
+p {
+  display: inline-block;
+}
+.contact-details h3 {
+  font-family: "Fredoka One", cursive;
+}
+.contact-details p {
+  font-family: "Balsamiq Sans", cursive;
+}
+.social_links {
+  display: inline-block;
+}
+.social_links .combo {
+  transform: scale(0.9);
+  transition: 0.4s ease-in;
+  margin: 0 0.5rem;
+  height: 3em;
+  width: 3em;
+  line-height: 3em;
+}
+.combo .circle {
+  color: #5cca87;
+  transition: 0.4s ease-in;
+  font-size: 3em;
+}
+.combo .icon {
+  color: white;
+  font-size: 2rem;
+  transform: translateY(1px);
+  transition: 0.2s ease-in;
+}
+.combo:hover {
+  transform: scale(1.1);
+}
+.combo:hover,
+.combo:hover .icon {
+  color: white;
+}
+.ig:hover,
+.ig:hover .circle {
+  color: #e91e63;
+}
+.fb:hover,
+.fb:hover .circle {
+  color: #2196f3;
+}
+.yt:hover,
+.yt:hover .circle {
+  color: #f44336;
+}
+.tw:hover,
+.tw:hover .circle {
+  color: #2196f3;
+}
+.gt:hover,
+.gt:hover .circle {
+  color: #1f1f1f;
+}
+.college-logo {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+}
+.college-logo img {
+  width: 45%;
+  margin: auto;
+}
+.college-logo p {
+  font-size: 12px;
+  font-family: "Balsamiq Sans", cursive;
+  width: fit-content;
+}
+@media screen and (max-width: 800px) {
+}
+/*  */
