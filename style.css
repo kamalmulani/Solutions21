@@ -875,6 +875,10 @@ a:hover:after {
   padding: 2rem;
   font-size: 1rem;
 }
+#events{
+  position: relative;
+  z-index: 80;
+}
 
 .container {
   display: grid;
@@ -930,6 +934,7 @@ a:hover:after {
   margin: auto auto;
   color: white;
   font-weight: 700;
+  font-size: 2rem;
 }
 .card:hover {
   transform: scale(1.1);
@@ -963,28 +968,38 @@ a:hover:after {
     grid-template-columns: 50% 50%;
     row-gap: 1.5rem;
   }
+
+  .card h1{
+    font-size: 1.5rem;
+  }
   /* .card {
     width: 40%;
   } */
 }
 @media screen and (max-width: 650px) {
   .container {
-    display: block;
-    margin: 1.5rem auto;
+    display: grid;
   }
   .card {
     width: 60%;
+    height: 20vh;
     margin: 1.5rem auto;
+  }
+  .card h1{
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 500px) {
   .container {
-    display: block;
-    margin: 1.5rem auto;
+    display: grid;
   }
   .card {
     width: 80%;
+    height: 20vh;
     margin: 1.5rem auto;
+  }
+  .card h1{
+    font-size: 1.5rem;
   }
 }
 
