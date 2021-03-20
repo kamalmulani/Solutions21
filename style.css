@@ -650,7 +650,6 @@ body {
 
 @media screen and (max-width: 980px) {
   .hero p.intro {
-    
     margin-bottom: 0.6em;
   }
   .hero h1 {
@@ -670,7 +669,6 @@ body {
   }
   .hero p.intro {
     font-size: 1em;
-    
   }
   .hero p.year {
     margin: 5px 0 10px;
@@ -713,21 +711,11 @@ img {
   display: block;
 }
 
-.section {
-  text-align: center;
-}
-.section p {
-  width: 80%;
-  margin: auto;
-  padding: 2rem;
-  font-size: 1rem;
-}
 /* navbar */
 
 nav {
   background: black;
   padding: 0.5rem 1rem;
-  
   transition: var(--transition);
 }
 .fixed-nav {
@@ -793,14 +781,11 @@ nav {
   transition: var(--transition);
   font-weight: bold;
   padding: 0.75rem 0;
-}
-
-
+  }
 .show-link {
   visibility: visible;
   z-index: 100;
 }
-
 .scroll-link{
   text-align: end;
 }
@@ -810,7 +795,6 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  
   display: inline-block;
   padding: 15px 20px;
   position: relative;
@@ -840,7 +824,6 @@ a:hover:after {
   }
   .nav-center {
     width: 90vw;
-    
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -876,4 +859,133 @@ a:hover:after {
   }
   
 }
+/*  */
+
+/* Events Page */
+.title h2 {
+  padding: 1rem;
+}
+.section {
+  text-align: center;
+  margin: 1rem auto;
+}
+.section p {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.container {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: auto;
+}
+.card-1 {
+  background-image: url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y29kZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(93, 47, 72, 0.2);
+  background-blend-mode: lighten;
+}
+.card-2 {
+  background-image: url("https://images.unsplash.com/photo-1499551660540-eaf0697882f5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGdhbWluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(7, 24, 69, 0.2);
+  background-blend-mode: lighten;
+}
+.card-3 {
+  background-image: url("https://images.unsplash.com/photo-1585166059782-f28143545183?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVjaGFuaWNhbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.137);
+  background-blend-mode: lighten;
+}
+.card-4 {
+  background-image: url("https://images.unsplash.com/photo-1462041866295-e4af004a32ef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(192, 120, 78, 0.2);
+  background-blend-mode: lighten;
+}
+.card {
+  width: 80%;
+  height: 40vh;
+  margin: 2rem auto;
+  /* background-image: url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y29kZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(115, 222, 255, 0.137);
+  background-blend-mode: lighten; */
+  text-align: center;
+  /* border-radius: 1rem; */
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.card h1 {
+  display: inline-block;
+  margin: auto auto;
+  color: white;
+  font-weight: 700;
+}
+.card:hover {
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
+/*  */
+.link-event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--link);
+  color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+/* .link-event p {
+  margin: 0;
+} */
+
+@media screen and (max-width: 1100px) {
+  .container {
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 1.5rem;
+  }
+  /* .card {
+    width: 28%;
+  } */
+}
+@media screen and (max-width: 850px) {
+  .container {
+    grid-template-columns: 50% 50%;
+    row-gap: 1.5rem;
+  }
+  /* .card {
+    width: 40%;
+  } */
+}
+@media screen and (max-width: 650px) {
+  .container {
+    display: block;
+    margin: 1.5rem auto;
+  }
+  .card {
+    width: 60%;
+    margin: 1.5rem auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    display: block;
+    margin: 1.5rem auto;
+  }
+  .card {
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+}
+
 /*  */
