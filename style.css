@@ -716,7 +716,6 @@ img {
 nav {
   background: black;
   padding: 0.5rem 1rem;
-
   transition: var(--transition);
 }
 .fixed-nav {
@@ -742,6 +741,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .nav-toggle {
   font-size: 1.5rem;
@@ -768,7 +768,7 @@ nav {
   height: 200px;
 }
 
-.links {
+.links{
   text-align: right;
 }
 .links a {
@@ -781,14 +781,12 @@ nav {
   transition: var(--transition);
   font-weight: bold;
   padding: 0.75rem 0;
-}
-
+  }
 .show-link {
   visibility: visible;
   z-index: 100;
 }
-
-.scroll-link {
+.scroll-link{
   text-align: end;
 }
 
@@ -797,12 +795,11 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-
   display: inline-block;
   padding: 15px 20px;
   position: relative;
 }
-a:after {
+a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -814,9 +811,9 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after {
-  width: 100%;
-  left: 0;
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 /* Media query for navbar in bigger screen */
@@ -827,7 +824,6 @@ a:hover:after {
   }
   .nav-center {
     width: 90vw;
-
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -842,6 +838,7 @@ a:hover:after {
   }
   .links-container {
     height: auto !important;
+    
   }
   .links {
     display: flex;
@@ -860,6 +857,7 @@ a:hover:after {
     font-weight: bold;
     padding-bottom: 0.5em;
   }
+  
 }
 /*  */
 
@@ -989,3 +987,5 @@ a:hover:after {
     margin: 1.5rem auto;
   }
 }
+
+/*  */
