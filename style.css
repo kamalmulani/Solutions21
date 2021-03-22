@@ -928,6 +928,7 @@ a:hover:after {
   display: flex;
   align-items: center;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 .card h1 {
   display: inline-block;
