@@ -1035,5 +1035,7 @@ a:hover:after {
   font-weight: bold;
   font-size: large;
 }
-
+#left{
+  text-align: left;
+}
 /*  */
