@@ -790,7 +790,7 @@ nav {
   text-align: end;
 }
 
-a {
+#navbut {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -799,7 +799,7 @@ a {
   padding: 15px 20px;
   position: relative;
 }
-a:after {    
+#navbut:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -811,7 +811,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
+#navbut:hover:after { 
   width: 100%; 
   left: 0; 
 }
@@ -1039,3 +1039,29 @@ a:hover:after {
   text-align: left;
 }
 /*  */
+#butt1{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#butt{
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  margin: auto;
+  padding: 6px 20px;
+  font-size: larger;
+  font-family: "Abel", sans-serif;
+  
+  letter-spacing: 2px;
+}
+#butt:hover{
+  background-color: white;
+  color: black;
+}
+#butt:active{
+  color: black;
+  background-color: #5cca87;
+  border-color: #5cca87;
+}
