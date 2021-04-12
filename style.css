@@ -1157,8 +1157,6 @@ footer{
   font-size: 2.5rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
-  z-index: 1;
-  position: relative;
 }
 
 .sectionH2Left{
@@ -1170,8 +1168,6 @@ footer{
   font-size: 2.5rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
-  z-index: 1;
-  position: relative;
 }
 
 #statistics{
