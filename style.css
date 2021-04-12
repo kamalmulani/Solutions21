@@ -1151,12 +1151,13 @@ footer{
     font-size: 1em;
     text-underline-offset: 6px;
     margin-bottom: 10px;
+    padding: 0.4rem;
   }
   .footerLinks>h2{
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
   .link>a{
-    padding: 5px 20px;
+    padding: 0.4rem;
   }
 }
 /*Footer*/
