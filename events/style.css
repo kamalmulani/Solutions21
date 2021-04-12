@@ -310,7 +310,7 @@ a:hover:after {
 	/* background-color: yellowgreen; */
 }
 
-a.scroll-link {
+a.scroll-link,.link>a {
   color: #fff;
  
   text-decoration: none;
@@ -319,7 +319,7 @@ a.scroll-link {
   
   position: relative;
 }
-a.scroll-link:after {    
+a.scroll-link:after,.link>a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -331,7 +331,7 @@ a.scroll-link:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a.scroll-link:hover:after { 
+a.scroll-link:hover:after,.link>a:hover:after { 
   width: 100%; 
   left: 0; 
 }
@@ -342,4 +342,54 @@ a.scroll-link:hover:after {
 .active{
   display: grid;
 }
+/*Footer*/
+footer{
+  display: grid;
+  grid-template-columns: 35% 35% 25%;
+  padding: 2rem;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  background: black;
+  z-index: 1;
+}
+
+.footerLinks>h1{
+  padding: 0 20px;
+  font-family: "Abel", sans-serif;
+  text-underline-offset: 8px;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+.footerLinks>h2{
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.footerLinks{
+ padding:2rem;
+ font-size: 0.8rem;
+}
+
+@media screen and (max-width:680px){
+  footer{
+    display: grid;
+    padding: 0;
+  }
+  .footerLinks{
+    padding: 0;
+    float: left;
+  }
+  .footerLinks>h1{
+    font-size: 1em;
+    text-underline-offset: 6px;
+    margin-bottom: 10px;
+  }
+  .footerLinks>h2{
+    font-size: 0.6em;
+  }
+  .link>a{
+    padding: 5px 20px;
+  }
+}
+
 /*  */
