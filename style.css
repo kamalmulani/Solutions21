@@ -1029,6 +1029,7 @@ a:hover:after {
   .card h1{
     font-size: 1rem;
   }
+  
 }
 @media screen and (max-width: 500px) {
   .container {
@@ -1073,6 +1074,10 @@ a:hover:after {
   font-weight: 10;
 }
 
+.heroDate{
+  margin-left: -1rem;
+}
+
 @media screen and (max-width:1080px){
   .aboutPElement{
     width:90%;
@@ -1091,6 +1096,10 @@ a:hover:after {
   }
   .aboutPElement{
     width: 100%;
+    margin-left: 0;
+  }
+
+  .heroDate{
     margin-left: 0;
   }
 
