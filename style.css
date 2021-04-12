@@ -1208,5 +1208,9 @@ footer{
     text-align: center;
     margin: auto;
   }
+
+  .pdiv>p,.pdiv>.statsDet>p{
+    padding-left: 0;
+  }
 }
 /*  */
