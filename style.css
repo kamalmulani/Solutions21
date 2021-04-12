@@ -1191,7 +1191,9 @@ footer{
   display: grid;
   grid-template-columns: 50% 50%;
 }
-
+.titleSec>h2{
+  padding: 1rem 2rem;
+}
 @media screen and (max-width:680px){
   #statistics>.pdiv{
     grid-template-columns: 100%;
@@ -1201,17 +1203,25 @@ footer{
     grid-row: 2;
   }
   .sectionH2Right{
-    text-align: center;
+    width: 80%;
+    padding-left: 0;
+    text-align: left;
     margin: auto;
   }
 
   .sectionH2Left{
-    text-align: center;
+    width: 80%;
+    padding-left: 0;
+    text-align: left;
     margin: auto;
   }
 
   .pdiv>p,.pdiv>.statsDet>p{
     padding-left: 0;
+  }
+
+  .titleSec>h2{
+    padding: 0;
   }
 }
 /*  */
