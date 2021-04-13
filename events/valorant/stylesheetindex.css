@@ -1,0 +1,239 @@
+nav {
+  background: black;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  box-shadow: var(--light-shadow);
+  z-index: 100;
+  color: #000;
+  transition: var(--transition);
+}
+.fixed-nav .nav-toggle {
+  color: white;
+}
+.fixed-nav .links a {
+  color: white;
+}
+
+.nav-header {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-grey-1);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+  color: white;
+}
+.nav-toggle:hover {
+  color: var(--clr-secondary);
+}
+.logo {
+  height: 50px;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  font-size: 2em;
+}
+.show-links {
+  height: 200px;
+}
+
+.links{
+  text-align: right;
+}
+.links a {
+  background: black;
+  color: white;
+  font-size: 22px;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  padding: 15px;
+  transition: var(--transition);
+  font-weight: bold;
+  padding: 0.75rem 0;
+  }
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+.scroll-link{
+  text-align: end;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* Media query for navbar in bigger screen */
+/* Navbar was made with mobile first approach */
+@media screen and (min-width: 800px) {
+  nav {
+    background: transparent;
+  }
+  .nav-center {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    width: auto;
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+    
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    background: transparent;
+    color: var(--clr-white);
+    font-family: Poppins, sans-serif;
+    font-size: 0.5em;
+    padding: 10px;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    margin: 0 1rem;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+  }
+  
+}
+body{
+  font-family: montserrat;
+  color : white;
+  background-color: black;
+}
+
+.button{
+    font-family:  Copperplate;
+    background-color: #0000e6;
+    color: white;
+    font-size: 20;
+    border:2px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 1px; 
+    text-align: center;
+}
+#container{
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 200px;
+}
+.image{
+  float: right;
+  width: 500px;
+  height: 300px;
+  margin-top: -5%;
+  padding: 2px 2px 15px 2px;
+
+}
+#text{
+  font-size: 20;
+
+}
+@media screen and (max-width: 1112px){
+  .image{
+      display: block;
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+
+    
+  }
+}
+/*Footer*/
+footer{
+  display: grid;
+  grid-template-columns: 35% 35% 25%;
+  padding: 2rem;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  background: black;
+  z-index: 1;
+}
+
+.footerLinks>h1{
+  padding: 0 20px;
+  font-family: "Abel", sans-serif;
+  text-underline-offset: 8px;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+.footerLinks>h2{
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.footerLinks{
+ padding:2rem;
+ font-size: 0.8rem;
+}
+
+@media screen and (max-width:680px){
+  footer{
+    display: grid;
+    padding: 0;
+  }
+  .footerLinks{
+    padding: 0;
+    float: left;
+  }
+  .footerLinks>h1{
+    font-size: 1em;
+    text-underline-offset: 6px;
+    margin-bottom: 10px;
+    padding: 0.4rem;
+  }
+  .footerLinks>h2{
+    font-size: 0.6em;
+  }
+  .link>a{
+    padding: 0.4rem;
+  }
+}
