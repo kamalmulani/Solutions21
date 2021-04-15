@@ -21,12 +21,7 @@ body {
   font-size: 20px;
 }
 
-@media screen and (max-width: 920px) {
-  .main-content {
-    margin-right: 2%;
-    margin-left: 2%;
-  }
-}
+
 
 .description {
   margin-top: 5px;

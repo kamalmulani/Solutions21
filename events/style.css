@@ -95,6 +95,10 @@ nav {
   background: black;
   padding: 0.5rem 1rem;
   transition: var(--transition);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin-bottom: 2rem;
 }
 .fixed-nav {
   position: fixed;
@@ -186,9 +190,6 @@ a:hover:after {
 /* Media query for navbar in bigger screen */
 /* Navbar was made with mobile first approach */
 @media screen and (min-width: 800px) {
-  nav {
-    background: transparent;
-  }
   .nav-center {
     width: 90vw;
     margin: 0 auto;
