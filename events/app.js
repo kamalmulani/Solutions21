@@ -42,7 +42,7 @@ $(document).ready(function() {
 
    var path = window.location.href;
     path = path.split('#').pop();
-    if(path == "coding" || path == "mechinical" || path == "gaming" || path == "entc" ){
+    if(path == "coding" || path == "mechanical" || path == "gaming" || path == "entc" || path == "management" || path == "open-events" || path == "rbo" || path == "isdf"){
       document.getElementById(path).style.display = "grid";
       document.getElementById('infoscreen').style.display = "none";
       document.getElementById(path+"btn").className+=" whiteBG";
