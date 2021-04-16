@@ -110,7 +110,7 @@
       .get().then((doc) => {
           if (doc.exists) {
               console.log("Document data:", doc.data())
-              WriteCookie(user.uid,doc.data().Username,doc.data().email,doc.data().college,"https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
+              WriteCookie(user.uid,doc.data().Username,doc.data().email,doc.data().college,"https://st3.depositphotos.com/3581215/18899/v/600/depositphotos_188994514-stock-illustration-vector-illustration-male-silhouette-profile.jpg");
 
           } else {
               // doc.data() will be undefined in this case
@@ -204,8 +204,9 @@
 
 
         function WriteCookie(uid,name,email,college,imgurl) {
-          document.cookie ="aitdata="+"aitlogged=true,"+"aituid="+uid+",aitname="+name+",aitemail="+email+",aitcollege="+college+",aitiu="+imgurl+";path=/";
-          console.log(getCookie("aitdata"));
+          
+          document.cookie ="aitlogged=true,"+"aituid="+uid+",aitname="+name+",aitemail="+email+",aitcollege="+college+",aitiu="+imgurl+";path=/";
+          console.log(getCookie("aitlogged"));
 
         }
 
@@ -226,6 +227,6 @@
         };
 
         function deleteCookie(){
-          document.cookie = "aitdata=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          document.cookie = "aitlogged=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         }
   

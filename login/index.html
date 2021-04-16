@@ -9,6 +9,9 @@
       type="text/javascript"
     ></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Scripts/jq.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
@@ -78,10 +81,16 @@
         <div class="nav-center">
           <!-- nav header -->
           <div class="nav-header">
-            <img src="./Assests/tb.png" class="logo" alt="logo" />
+            <picture>
+              <source media="(max-width:800px)" srcset="./Assests/tb'.png">
+              <img class="logo" src="./Assests/tb.png" alt="Flowers">
+            </picture>
+            <div>
+            <img src="" class="loginsmallbtn prof">
             <button class="nav-toggle">
               <i class="fas fa-bars"></i>
             </button>
+          </div>
           </div>
           <!-- links -->
           <div class="links-container">
@@ -101,6 +110,7 @@
               <li>
                 <a href="#sponsors" class="scroll-link">sponsors</a>
               </li>
+              <li><img src="" class="loginbigbtn prof"></li>
             </ul>
           </div>
         </div>
