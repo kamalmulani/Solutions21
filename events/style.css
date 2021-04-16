@@ -409,3 +409,7 @@ footer{
 .ig:hover{
   box-shadow: 5px 10px 10px rgb(47, 78, 73);
 }
+
+*:focus {
+    outline: 0;
+}

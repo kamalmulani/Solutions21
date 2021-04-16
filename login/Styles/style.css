@@ -15,6 +15,111 @@ body {
   line-height: 1.5;
 }
 
+.main-content {
+  margin: 12px 10% 100px 12%;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 920px) {
+  .main-content {
+      margin-right: 2%;
+      margin-left: 2%;
+  }
+}
+
+.description {
+  margin-top: 5px;
+  font-family: 'Nanum Myeongjo', serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.path a {
+  color: #473e74;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+#current {
+  color: #494849;
+}
+
+
+.three-container {
+  overflow: hidden;
+}
+
+img {
+   opacity: 1;
+}
+
+event-image img {
+   float: right;
+}
+
+#event-image img {
+   width: 55%;
+   float: right;
+}
+
+@media screen and (max-width: 920px) {
+   #event-image img {
+       width: 98%;
+       float: none;
+   }
+}
+
+.contact {
+   display: inline-block;
+   width: 35%;
+}
+
+.sitemap {
+   display: inline-block;
+   margin-right: 5vh;
+   width: 55%;
+}
+
+.show {
+   display: inline-block;
+   width: 45%;
+}
+
+.registerForEvent {
+   margin-bottom: 3vh;
+   display: inline-block;
+   margin-top: 30px;
+}
+
+.registerForEvent a {
+   color: #ffffff;
+   border: solid;
+   border-radius: 3px;
+   border-width: 0.1px;
+   border-color: #ffffff;
+   padding: 8px 8px 8px 8px;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   font-size: 2.5vh;
+}
+
+.registerForEvent a:hover {
+   color: white;
+   background-color: #696969;
+}
+
+.TimeAddress {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 30px;
+}
+
+#title {
+   margin: 0;
+}
+
 #stars {
   overflow: hidden;
   width: 1px;
@@ -751,7 +856,6 @@ nav {
   transition: var(--transition);
   cursor: pointer;
   color: white;
-  vertical-align: middle;
 }
 .nav-toggle:hover {
   color: var(--clr-secondary);
@@ -780,6 +884,7 @@ nav {
   letter-spacing: var(--spacing);
   padding: 15px;
   transition: var(--transition);
+  text-decoration: none;
   font-weight: bold;
   padding: 0.75rem 0;
   }
@@ -817,16 +922,6 @@ a:hover:after {
   left: 0; 
 }
 
-.loginbigbtn{
-  display: none;
-}
-
-.loginsmallbtn{
-  display: unset;
-  height: 2em;
-  margin-right: 1em;
-}
-
 /* Media query for navbar in bigger screen */
 /* Navbar was made with mobile first approach */
 @media screen and (min-width: 800px) {
@@ -846,12 +941,6 @@ a:hover:after {
   }
   .nav-toggle {
     display: none;
-  }
-  .loginsmallbtn{
-    display: none;
-  }
-  .loginbigbtn{
-    display: unset;
   }
   .links-container {
     height: auto !important;
@@ -880,7 +969,7 @@ a:hover:after {
 
 /* Events Page */
 .title h2 {
-  padding: 1rem;
+  padding: 1.6rem;
 }
 .section {
   text-align: center;
@@ -1127,6 +1216,9 @@ a:hover:after {
   }
 
 } 
+
+
+
 /*Footer*/
 footer{
   display: grid;
@@ -1241,14 +1333,119 @@ footer{
     padding: 0;
   }
 }
-
-*:focus {
-    outline: 0;
-}
-
-#profimg{
-  width: 50px;
-  border-radius: 50px;
-  padding: 2rem;
-}
 /*  */
+
+
+
+
+
+
+.a{
+  display: flex;
+  justify-content : space-between; ;
+  flex-wrap : wrap;
+  flex-direction: row ;
+  padding: 5% 6% 0 6% ;
+  align-items: center;
+  flex-flow: row wrap-reverse;
+
+}
+.a1{
+  display: block;
+  /* padding: 5% ; */
+  color: rgba(255, 255, 255, 0.863);
+  font-size: 1.4rem;
+}
+.a1:hover{
+  display: block;
+  /* padding: 5% ; */
+  color: rgba(255, 255, 255, 0.959);
+  font-size: 1.6rem;
+  transition:  all 0.4s ease;
+}
+
+#bug{
+  display: flex;
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 5% 0% 5% 0%  ;
+  width: 50%;
+  
+  
+}
+#side_img img{
+  display: flex;
+  width:100% ;
+  margin-right : auto;
+
+}
+
+.discription{
+  display: flex;
+  justify-content : space-between; ;
+  flex-wrap : wrap;
+  flex-direction: row ;
+  padding: 5% 6% 0 6% ;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 110%;
+  text-align: justify;
+  text-justify: inter-word ;
+}
+
+h2{
+  padding: 0 0 0 0 ;
+
+}
+
+#EventInfo{
+
+  padding: 0 0 1.6rem 0 ;
+
+}
+
+#title_id{
+  font-size:400% ;
+  display: flex;
+  margin : 2% 0 2% 0   ;
+  padding:0 ;
+  justify-content:center ;
+  /* font-family: 'Bungee Inline', cursive; */
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color:rgb(255, 255, 255)
+}
+
+     /* THE button */
+     .pushable {
+      background: hsl(340deg 100% 32%);
+      border: none;
+      border-radius: 12px;
+      padding: 0;
+      cursor: pointer;
+    }
+    .front {
+      display: block;
+      padding: 12px 42px;
+      border-radius: 12px;
+      font-size: 1.25rem;
+      background: hsl(345deg 100% 47%);
+      color: white;
+      transform: translateY(-4px);
+    }
+    
+    .pushable:active .front {
+      transform: translateY(-2px);
+    }
+    
+    .pushable:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    .bb{
+      padding : 6% 6% 10% 6% ;
+    }
+
+
+
+
+
