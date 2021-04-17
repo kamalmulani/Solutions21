@@ -53,41 +53,41 @@
       <div id="stars2"></div>
       <div id="stars3"></div>
       <!--  -->
-  
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./tb.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="../index.html" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="../index.html#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="../index.html#events" class="scroll-link">events</a>
+              </li>
+              <li>
+                <a href="../index.html#Technofrolix" class="scroll-link">Technofrolix</a>
+              </li>
+              <li>
+                <a href="../index.html#sponsors" class="scroll-link">sponsors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <!--  -->
       <header id="home">
         <!-- navbar -->
-        <nav id="nav">
-          <div class="nav-center">
-            <!-- nav header -->
-            <div class="nav-header">
-              <img src="./tb.png" class="logo" alt="logo" />
-              <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-              </button>
-            </div>
-            <!-- links -->
-            <div class="links-container">
-              <ul class="links">
-                <li>
-                  <a href="/teachboard website/solutions21/index.html" class="scroll-link">home</a>
-                </li>
-                <li>
-                  <a href="#about" class="scroll-link">about</a>
-                </li>
-                <li>
-                  <a href="#events" class="scroll-link">events</a>
-                </li>
-                <li>
-                  <a href="#sponsors" class="scroll-link">sponsors</a>
-                </li>
-                <li>
-                  <a href="#register" class="scroll-link">register</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+       
         <div class="hero">
         <h1>EVENTS</h1>
       </div>
@@ -97,11 +97,12 @@
           <div style="flex:1"></div>
           <a class="event-cat-but blackBG" id="codingbtn" style="margin-left:0" onclick="changePannel(event,'coding')">coding</a>
           <a class="event-cat-but blackBG" id="entcbtn" onclick="changePannel(event,'entc')">entc</a>
-          <a class="event-cat-but blackBG" id="mechinicalbtn" onclick="changePannel(event,'mechinical')">mechinical</a>
+          <a class="event-cat-but blackBG" id="mechanicalbtn" onclick="changePannel(event,'mechanical')">mechanical</a>
           <a class="event-cat-but blackBG" id="open-eventsbtn" onclick="changePannel(event,'open-events')">open events</a>
           <a class="event-cat-but blackBG" id="managementbtn" onclick="changePannel(event,'management')">management</a>
           <a class="event-cat-but blackBG" id="gamingbtn" onclick="changePannel(event,'gaming')">gaming</a>
           <a class="event-cat-but blackBG" id="rbobtn" onclick="changePannel(event,'rbo')">robotics</a>
+          <a class="event-cat-but blackBG" id="isdfbtn" onclick="changePannel(event,'isdf')">isdf</a>
           
           <div style="flex:1"></div>
         </div>
@@ -109,83 +110,267 @@
         
       </header>
 
-      <div id="infoscreen" class="pannel" style="min-height: 220px; text-align: center; align-items: center;display: block;font-family: 'Montserrat', sans-serif;">
+      <div id="infoscreen" class="pannel" style="font-size:14px;min-height: 220px; text-align: center; align-items: center;display: block;font-family: 'Montserrat', sans-serif;">
         <div class="fa fa-arrow-left"></div>
         Scroll through above categories
         <div class="fa fa-arrow-right"></div>
     </div>
 
       <section id="coding" class="pannel">
-        <h2>coding</h2>
+        <div class="cm1 ig">
+          <a class="pannelA" href="./codeRed">
+          <img src="https://www.bgosoftware.com/blog/wp-content/uploads/2016/03/insidepost_coding.jpg" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Code Red</h2>
+        </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./bugOff">
+          <img src="https://th.bing.com/th/id/OIP.RXM4Ii9Wfyn7P2F1FzW4ZgHaDt?w=299&h=174&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Bug Off</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./reverseCoding">
+          <img src="https://th.bing.com/th/id/OIP.Z32GW2qamvFULwSypmuOjAHaEK?w=313&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Reverse Coding</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./sheCodes">
+          <img src="https://th.bing.com/th/id/OIP.QuA9eq_mxzaNM5Ef6wCTdgHaE8?w=242&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">SHE-CODES</h2>
+          </a>
+        </div>
+
+        
       </section>
       
     
       <section id="entc" class="pannel" style="display:none">
-        <h2>entc</h2>
+        <div class="cm1 ig">
+          <a class="pannelA" href="./nandIt">
+          <img src="https://th.bing.com/th/id/OIP.tj5MeETsWv8UM9sqYtfzBwHaEn?w=280&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">NAND IT</h2>
+        </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./impedence">
+          <img src="https://th.bing.com/th/id/OIP.EliAqkPvf4fZSWwRY7LdnwHaES?w=270&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">IMPEDENCE</h2>
+          </a>
+        </div>
+
+       
         
       </section>
 
       <section id="rbo" class="pannel" style="display:none">
-        <h2>robotics</h2>
+        <div class="cm1 ig">
+          <a class="pannelA" href="./event1">
+          <img src="https://esya.iiitd.edu.in/static/img/events/ece/robowars.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event 1</h2>
+        </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./event2">
+          <img src="https://esya.iiitd.edu.in/static/img/events/ece/robowars.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event 2</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./event3">
+          <img src="https://esya.iiitd.edu.in/static/img/events/ece/robowars.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event 3</h2>
+          </a>
+        </div>
         
       </section>
     
-      <section id="mechinical" class="pannel" style="display:none">
-        <h2>mechinical</h2>
+      <section id="mechanical" class="pannel" style="display:none">
+        <div class="cm1 ig">
+          <a class="pannelA" href="./catia">
+          <img src="https://i.ytimg.com/vi/4G68bI_QPRI/maxresdefault.jpg" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Catia</h2>
+        </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./autocad">
+          <img src="https://th.bing.com/th/id/OIP.tlMbE0AkLQMHUcVoMd24JwHaEK?w=306&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">AutoCAD</h2>
+          </a>
+        </div>
+
+        
       </section>
 
       <section id="open-events" class="pannel" style="display:none">
-        <h2>open-events</h2>
+        <div class="cm1 ig">
+          <a class="pannelA" href="./techMatrix">
+          <img src="https://th.bing.com/th/id/OIP.7-fMwidRE2Un34gNyj6XhQHaEK?w=331&h=186&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Tech Matrix</h2>
+        </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./sudokuTech">
+          <img src="https://th.bing.com/th/id/OIP.VefZSlVfcBEx6Pen63dFOgHaEK?w=333&h=187&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Sudoku Tech</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./placementApti">
+          <img src="https://th.bing.com/th/id/OIP.cxnNP9wNM6Ze4f48ZCVo-QHaEH?w=316&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Placement APTI</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./rubixCube">
+          <img src="https://th.bing.com/th/id/OIP.mw7LlLQ7fRar2bbUMXm6hwHaEK?w=318&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Rubix Cube</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./photoshop">
+          <img src="https://th.bing.com/th/id/OIP.DfQ3AzR1DTKeyp0Ar4KQrAHaEK?w=312&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Photoshop</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./adMaking">
+          <img src="https://th.bing.com/th/id/OIP.GavJO7-rEAGRzNaqdnXj9wHaEK?w=311&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Ad Making</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./photography">
+          <img src="https://th.bing.com/th/id/OIP.0PokCBWS0pwsE3ZZOLqhcwHaEK?w=317&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Photography</h2>
+          </a>
+        </div>
       </section>
 
       <section id="management" class="pannel" style="display:none">
-        <h2>management</h2>
+        <div class="cm1 ig">
+          <a class="pannelA" href="./eventA">
+          <img src="https://esya.iiitd.edu.in/static/img/events/cse/blindcoding.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event A</h2>
+        </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./eventB">
+          <img src="https://esya.iiitd.edu.in/static/img/events/cse/blindcoding.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event B</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./eventC">
+          <img src="https://esya.iiitd.edu.in/static/img/events/cse/blindcoding.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event C</h2>
+          </a>
+        </div>
+
+        
       </section>
 
       <section id="gaming" class="pannel" style="display:none">
         <div class="cm1 ig">
-          <div class="c1"></div>
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
-          
+          <a class="pannelA" href="./codm">
+          <img src="https://th.bing.com/th/id/OIP.H9BhSurocl554uVwBDmfdQHaEK?w=300&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">CODM(BR & MP)</h2>
+        </a>
         </div>
 
         <div class="cm1 ig">
-          <div class="c1"></div>
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
-          
+          <a class="pannelA" href="./valorant">
+          <img src="https://th.bing.com/th/id/OIP.oT7uOGgrio4pAdwM3h7JSgHaEK?w=305&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Valorant</h2>
+          </a>
         </div>
 
         <div class="cm1 ig">
-          <div class="c1"></div>
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
-          
+          <a class="pannelA" href="./clashRoyale">
+          <img src="https://th.bing.com/th/id/OIP.Ijl29J1W5hiW2csMO_rUVgHaEK?w=299&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Clash Royale</h2>
+          </a>
         </div>
 
         <div class="cm1 ig">
-          <div class="c1"></div>
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
-          
+          <a class="pannelA" href="./freeFire">
+          <img src="https://th.bing.com/th/id/OIP.6EM6sCCtB1sfh_mynPbgQwHaEK?w=292&h=180&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Free Fire</h2>
+          </a>
         </div>
 
-        <div class="cm1 ig">
-          <div class="c1"></div>
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
-          
-        </div>
-
-        <div class="cm1 ig">
-          <div class="c1"></div>
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
-          
-        </div>
-
-        <div class="cm1 ig">
-          <div class="c1"></div>
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="">
-          
-        </div>
+       
       </section>
+      <section id="isdf" class="pannel" style="display:none">
+        <div class="cm1 ig">
+          <a class="pannelA" href="./eventOne">
+          <img src="https://esya.iiitd.edu.in/static/img/events/cse/blindcoding.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event One</h2>
+        </a>
+        </div>
 
+        <div class="cm1 ig">
+          <a class="pannelA" href="./eventTwo">
+          <img src="https://esya.iiitd.edu.in/static/img/events/cse/blindcoding.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event two</h2>
+          </a>
+        </div>
+
+        <div class="cm1 ig">
+          <a class="pannelA" href="./eventThree">
+          <img src="https://esya.iiitd.edu.in/static/img/events/cse/blindcoding.png" alt="">
+          <h2 style="background: white;color: #000;margin: -1px;padding: 0.4rem;">Event Three</h2>
+          </a>
+        </div>
+
+        
+      </section>
+      <div style="z-index: 1;background: black;position: relative;">
+        <footer>
+     
+          <div class="footerLinks">
+            <h1>Get to know us</h1>
+            <h2 class="link"><a href="https://ait-techboard.github.io/hackathons/">About us</a></h2>
+            <h2 class="link"><a href="./ourTeam">Our Team</a></h2>
+            <h2 class="link"><a href="./theTheme">The Theme</a></h2>
+          </div>
+    
+          <div class="footerLinks" style="height: 149.68px;">
+            <h1>Follow us on</h1>
+            <h2 class="link"><a href="https://www.facebook.com/groups/680716451983061">Facebook</a></h2>
+            <h2 class="link"><a href="https://www.instagram.com/aittechnicalboard/">Instagram</a></h2>
+          </div>
+    
+          <div class="footerLinks">
+            <h1>Site Map</h1>
+            <h2 class="link"><a href="./index.html">Home</a></h2>
+            <h2 class="link"><a href="./register">Register</a></h2>
+            <h2 class="link"><a href="./events/index.html">Event Details</a></h2>
+            <h2 class="link"><a href="./schedule">Schedule</a></h2>
+            <h2 class="link"><a href="./index.html#sponsors" class="scroll-link">Sponsors</a></h2>
+          </div>
+        
+        </footer>
+        <div style="padding: 2rem 0;">
+          <img style="width:10rem; margin: auto;" src="./tb-bottom.png" alt="logo">
+        </div>
+      </div>
       
 
       

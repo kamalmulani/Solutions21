@@ -12,6 +12,7 @@ body {
   font-family: "Istok Web", sans-serif;
   min-height: 100%;
   margin: 0;
+  line-height: 1.5;
 }
 
 /* CSS for Title */
@@ -94,6 +95,10 @@ nav {
   background: black;
   padding: 0.5rem 1rem;
   transition: var(--transition);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin-bottom: 2rem;
 }
 .fixed-nav {
   position: fixed;
@@ -185,9 +190,6 @@ a:hover:after {
 /* Media query for navbar in bigger screen */
 /* Navbar was made with mobile first approach */
 @media screen and (min-width: 800px) {
-  nav {
-    background: transparent;
-  }
   .nav-center {
     width: 90vw;
     margin: 0 auto;
@@ -277,40 +279,45 @@ a:hover:after {
 
 .pannel{
   display: none;
+  width: 90%;
   grid-template-columns: 100%;
   text-align: center;
-  margin: 2em;
-  padding: 1em 2em;
+  margin: auto;
+  padding: 0;
+  padding-bottom: 1rem;
 }
-
-@media screen and (min-width: 1064px){
+@media screen and (min-width:650px) {
+  .pannel{
+    grid-template-columns: 50% 50%;
+    padding: 1em 2em;
+  }
+  
+}
+@media screen and (min-width: 1000px){
   .arrow-icons{
     display: none;
   }
   .pannel{
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
   }
 }
 
 .cm1 {
 	margin:2em;
-  padding:1em;
-	background:rgba(255, 255, 255, 0.1);
-	border-radius: 15px;
-	box-shadow:20px 20px 50px rgb(0, 0, 0,0.5) ;
-	border: 1px solid rgba(2, 7, 54, 0.5);
+  
+	border: 1px solid rgb(255, 255, 255);
 	backdrop-filter: blur(5px);
 }
 
 .c1{
-	height: 50%;
+	
 	position: absolute;
 	width: 100%;
 	
 	/* background-color: yellowgreen; */
 }
 
-a.scroll-link {
+a.scroll-link,.link>a {
   color: #fff;
  
   text-decoration: none;
@@ -319,7 +326,7 @@ a.scroll-link {
   
   position: relative;
 }
-a.scroll-link:after {    
+a.scroll-link:after,.link>a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -331,7 +338,7 @@ a.scroll-link:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a.scroll-link:hover:after { 
+a.scroll-link:hover:after,.link>a:hover:after { 
   width: 100%; 
   left: 0; 
 }
@@ -342,4 +349,67 @@ a.scroll-link:hover:after {
 .active{
   display: grid;
 }
-/*  */
+/*Footer*/
+footer{
+  display: grid;
+  grid-template-columns: 35% 35% 25%;
+  padding: 2rem;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  background: black;
+  z-index: 1;
+}
+
+.footerLinks>h1{
+  padding: 0 20px;
+  font-family: "Abel", sans-serif;
+  text-underline-offset: 8px;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+.footerLinks>h2{
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.footerLinks{
+ padding:2rem;
+ font-size: 0.8rem;
+}
+
+@media screen and (max-width:680px){
+  footer{
+    display: grid;
+    padding: 0;
+  }
+  .footerLinks{
+    padding: 0;
+    float: left;
+  }
+  .footerLinks>h1{
+    font-size: 1em;
+    text-underline-offset: 6px;
+    margin-bottom: 10px;
+    padding: 0.4rem;
+  }
+  .footerLinks>h2{
+    font-size: 0.6em;
+  }
+  .link>a{
+    padding: 0.4rem;
+  }
+}
+/*Footer*/
+
+.pannelA{
+  letter-spacing: 0;
+  padding: 0;
+  display: unset;
+}
+.ig:hover{
+  box-shadow: 5px 10px 10px rgb(47, 78, 73);
+}
+
+*:focus {
+    outline: 0;
+}

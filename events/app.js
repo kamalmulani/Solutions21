@@ -17,17 +17,6 @@ navToggle.addEventListener("click", function () {
 
 // ********** fixed navbar ************
 
-const navbar = document.querySelector("#nav");
-window.addEventListener("scroll", function () {
-  const scrollHeight = window.pageYOffset;
-
-  const navHeight = navbar.getBoundingClientRect().height;
-  if (scrollHeight > navHeight) {
-    navbar.classList.add("fixed-nav");
-  } else {
-    navbar.classList.remove("fixed-nav");
-  }
-});
 
 
 function changePannel(evt, pannelName) {
@@ -43,6 +32,8 @@ function changePannel(evt, pannelName) {
     tablinks[i].className = tablinks[i].className.replace(" whiteBG", " ");
   }
   document.getElementById(pannelName).style.display = "grid";
+  url = (window.location.href.split('#')[0])+('#'+pannelName);
+  window.history.replaceState({}, '', url);
   evt.currentTarget.className += " whiteBG";
 }
 
@@ -55,7 +46,7 @@ $(document).ready(function() {
       document.getElementById(path).style.display = "grid";
       document.getElementById('infoscreen').style.display = "none";
       document.getElementById(path+"btn").className+=" whiteBG";
-      console.log("s");
+      
     }
 
 });
