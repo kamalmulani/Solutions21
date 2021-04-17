@@ -35,7 +35,7 @@
                         console.log("Email Sent Succesfully!!!");
                         alert_creator("Verification Link sent!! Check your email");
                         var uid = user.uid;
-                        saveuserdata(uid,name,email, college);
+                        saveuserdata(uid,name,email, college,"www.google.com","fromEmail");
                         }, function(error) {
                         console.log(error);
                         alert(error);
@@ -60,11 +60,10 @@
                 console.log(error.message)
                 alert_creator("Error logging out!!")
               });
-              deleteCookie();
         }
   
 
-        function saveuserdata(uid,name,email,college, photoUrl){
+        function saveuserdata(uid,name,email,college, photoUrl, flag){
           console.log("Saveuserdata starts")
           db.collection("users").doc(uid).set({
               Username: name, 
@@ -74,10 +73,17 @@
           })
           .then(function(uid) {
               console.log("Document written with ID: ", uid);
-              logout();
+              if(flag=="fromGoogle")
+              {
+                alert_creator("Successfully logged in")
+                  console.log("registered with google")
+              }
+              else{
+                logout();
+              }
           })
           .catch(function(error) {
-              console.error("Error adding document: ", error);
+              console.log("Error adding document: ", error);
           });
   
         }
@@ -110,8 +116,7 @@
       .get().then((doc) => {
           if (doc.exists) {
               console.log("Document data:", doc.data())
-              WriteCookie(user.uid,doc.data().Username,doc.data().email,doc.data().college,"https://st3.depositphotos.com/3581215/18899/v/600/depositphotos_188994514-stock-illustration-vector-illustration-male-silhouette-profile.jpg");
-
+             
           } else {
               // doc.data() will be undefined in this case
               console.log("No such document!");
@@ -173,9 +178,8 @@
                 console.log("Google sign in log - " + user.displayName )
                 console.log("Google sign in log - " + user.email )
                 console.log("Google sign in log - " + user.photoURL)
-                saveuserdata(user.uid, user.displayName ,user.email ,"Used Google Account", user.photoURL)
-                WriteCookie(user.uid, user.displayName ,user.email ,"Used Google Account", user.photoURL)
-                
+                saveuserdata(user.uid, user.displayName ,user.email ,"Used Google Account", user.photoURL,"fromGoogle")
+               
               }).catch((error) => {
                 var errorCode = error.code;
                 var errorMessage = error.message;
@@ -201,32 +205,3 @@
                 </div>'
             $("#alert_container").html(data);
         }
-
-
-        function WriteCookie(uid,name,email,college,imgurl) {
-          
-          document.cookie ="aitlogged=true,"+"aituid="+uid+",aitname="+name+",aitemail="+email+",aitcollege="+college+",aitiu="+imgurl+";path=/";
-          console.log(getCookie("aitlogged"));
-
-        }
-
-        function getCookie(cname) {
-          var name = cname + "=";
-          var decodedCookie = decodeURIComponent(document.cookie);
-          var ca = decodedCookie.split(';');
-          for(var i = 0; i <ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-              c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-              return c.substring(name.length, c.length);
-            }
-          }
-          return "";
-        };
-
-        function deleteCookie(){
-          document.cookie = "aitlogged=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-        }
-  
