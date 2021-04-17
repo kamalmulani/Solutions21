@@ -363,7 +363,7 @@ footer{
   font-size: 0.8rem;
   cursor: pointer;
 }
-.footerLinks{
+.footerLinks{ margin: 0 auto;
  padding:2rem;
  font-size: 0.8rem;
 }
@@ -373,7 +373,7 @@ footer{
     display: grid;
     padding: 0;
   }
-  .footerLinks{
+  .footerLinks{ margin: 0 auto;
     padding: 0;
     float: left;
   }

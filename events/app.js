@@ -32,7 +32,7 @@ function changePannel(evt, pannelName) {
     tablinks[i].className = tablinks[i].className.replace(" whiteBG", " ");
   }
   document.getElementById(pannelName).style.display = "grid";
-  url = (window.location.href.split('#')[0])+('#'+pannelName);
+  url = (window.location.href.split('?')[0])+('?'+pannelName);
   window.history.replaceState({}, '', url);
   evt.currentTarget.className += " whiteBG";
 }
@@ -41,8 +41,9 @@ $(document).ready(function() {
   
 
    var path = window.location.href;
-    path = path.split('#').pop();
-    if(path == "coding" || path == "mechinical" || path == "gaming" || path == "entc" ){
+    path = path.split('?').pop();
+    if(path == "coding" || path == "mechanical" || path == "gaming" || path == "entc" 
+      || path=="robotics" || path == "management" || path == "open-events" || path == "isdf"){
       document.getElementById(path).style.display = "grid";
       document.getElementById('infoscreen').style.display = "none";
       document.getElementById(path+"btn").className+=" whiteBG";

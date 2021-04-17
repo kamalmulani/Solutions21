@@ -29,6 +29,7 @@ display: flex;
 transition: 0.25s;
 width: 100%;
 border-radius: 5px;
+justify-content: center;
 }
 
 .g-logo-parent{
@@ -67,7 +68,11 @@ cursor: pointer;
 color: rgb(66, 133, 244);
 }
 
-.g-button-parent:hover .g-logo-parent, .g-tex{
+.g-button-parent:hover .g-tex{
 background-color: rgb(66, 133, 244);
 cursor: pointer;  
+}
+
+.g-button-parent:hover .g-logo{
+    background-color: darkblue;
 }
