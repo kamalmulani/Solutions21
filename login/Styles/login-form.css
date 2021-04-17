@@ -305,8 +305,7 @@ section .container.active .signinBx .imgBx {
     width: 100%;
   }
 }
-
-
+/* ------------------------ forgot password css --------------------- */
 
 
 /* ----------------------- Modal CSS -------------------------- */
@@ -341,3 +340,5 @@ section .container .input-modal input {
 
 
 /* ------------X--------- Modal CSS --------------X---------- */
+
+
