@@ -704,9 +704,9 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.logo) {
+/* img:not(.logo) {
   width: 100%;
-}
+} */
 img {
   display: block;
 }
@@ -927,6 +927,12 @@ a:hover:after {
   grid-template-columns: 25% 25% 25% 25%;
   margin: auto;
 }
+
+section .container .user .formBx form .signup {
+  margin-top: 5px  !important;
+}
+
+
 .card-1 {
   background-image: url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y29kZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
   background-size: cover;

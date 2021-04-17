@@ -1,0 +1,73 @@
+h6 {
+    color: #555;
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 20px 0 20px; 
+ } 
+ 
+ h6 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+
+.g_body{
+    margin-top: 30px;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+}
+
+.g-button-parent{
+border: 1px solid rgb(66, 133, 244);
+background: #677eff;
+display: flex;
+transition: 0.25s;
+width: 100%;
+border-radius: 5px;
+}
+
+.g-logo-parent{
+transition: 0.5s;
+border-radius: 5px;
+margin: 2px;
+display: flex;
+justify-content: center;
+}
+
+.g-logo{
+width: 35px;
+height: 35px;
+padding: 8px 8px;
+background: white;
+border-radius: 50%;
+margin: 5px;
+}
+
+.g-text{
+font-size: 20px;
+padding: 8px 8px;
+color: white;
+font-family: roboto;
+text-align: center;
+margin: 2px;
+}
+
+
+.g-button-parent:hover{
+background-color: white;
+cursor: pointer;  
+}
+
+.g-button-parent:hover .g-text{
+color: rgb(66, 133, 244);
+}
+
+.g-button-parent:hover .g-logo-parent, .g-tex{
+background-color: rgb(66, 133, 244);
+cursor: pointer;  
+}

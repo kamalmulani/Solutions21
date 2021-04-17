@@ -58,6 +58,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./Styles/login-form.css">
+    <link rel="stylesheet" href="./Styles/google-signin.css"
 
   </head>
   <body>
@@ -163,8 +164,24 @@
                   Don't have an account ?
                   <a href="#" onclick="toggleForm();">Sign Up.</a>
                 </p>
+
+
+                <h6><span>Or</span></h6>
+
+
+                <div class="g_body">
+                  <button class="g-button-parent" onclick="signInWithGoogle()">
+                    <div class="g-logo-parent">
+                      <img class="g-logo" src="./Assests/g-logo.png" alt="Google Logo">
+                    </div>
+                    <p class="g-text">Sign In</p>
+                  </button>
+                </div>
+                
               </form>
+              
             </div>
+            
           </div>
 
 
@@ -173,10 +190,10 @@
             <div class="formBx">
               <form action="" onsubmit="return false;">
                 <h2>Register</h2>
-                <input type="text" id="username" name="" placeholder="Username" oninvalid="alert('This field is mandatory');" required/>
-                <input type="email" id="regemail" name="" placeholder="Email" oninvalid="alert('This field is mandatory');" required/>
-                <input type="text" id="regcoll" name="" placeholder="College" oninvalid="alert('This field is mandatory')"/>
-                <input type="password" id="regpassword" name="" placeholder="Password" oninvalid="alert('This field is mandatory')"/>
+                <input type="text" id="username" name="" placeholder="Username" required/>
+                <input type="email" id="regemail" name="" placeholder="Email" required/>
+                <input type="text" id="regcoll" name="" placeholder="College" />
+                <input type="password" id="regpassword" name="" placeholder="Password"/>
                 <!-- <input type="submit" name="" value="Sign Up" /> -->            
     
                 <!-- new sign up button -->
@@ -188,6 +205,18 @@
                   Already have an account ?
                   <a href="#" onclick="toggleForm();">Sign in.</a>
                 </p>
+
+                <h6><span>Or</span></h6>
+
+                <div class="g_body">
+                  <button class="g-button-parent" onclick="signInWithGoogle()">
+                    <div class="g-logo-parent">
+                      <img class="g-logo" src="./Assests/g-logo.png" alt="Google Logo">
+                    </div>
+                    <p class="g-text">Sign Up</p>
+                  </button>
+                </div>
+                
               </form>
             </div>
             <div class="imgBx"><img src="./Assests/main-logo.jpeg" alt="" /></div>
@@ -211,6 +240,8 @@
             </div>
           </div> 
 
+          
+
 
         </div>
         
@@ -218,11 +249,11 @@
 
       </section> 
 
-      <button type="submit" class="button" onclick="logout()">Log Out</button>
+      <!-- <button type="submit" class="button" onclick="logout()">Log Out</button> -->
 
       <br>
 
-      <button type="submit" class="button" onclick="signInWithGoogle()">Google Sign In</button>
+      <!-- <button type="submit" class="button" onclick="signInWithGoogle()">Google Sign In</button> -->
 
     <script  src="./Scripts/form.js"></script>
 
