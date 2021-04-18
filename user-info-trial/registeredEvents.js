@@ -38,7 +38,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                                                                             <tr>
                                                                             <td>${doc.data().eventName}</td>
                                                                             <td>${doc.data().timestamp}</td>
-                                                                            <td><button type="button" class="button >
+                                                                            <td><button type="button" class="button" onclick="location.href='../events/eventRegister/index.html?eventID=${doc.data().eventId}'">
                                                                                     <span class="button__text">Details</span>
                                                                                     </button>
                                                                             </td>
