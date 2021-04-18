@@ -781,6 +781,7 @@ nav {
   letter-spacing: var(--spacing);
   padding: 15px;
   transition: var(--transition);
+  text-decoration: none;
   font-weight: bold;
   padding: 0.75rem 0;
   }
@@ -831,11 +832,6 @@ a:hover:after {
   vertical-align: middle;
   font-weight: bold;
   letter-spacing: var(--spacing);
-}
-.loginbtn:hover{
-  background: white;
-  color: #000;
-  cursor: pointer;
 }
 
 .loginbigbtn{
@@ -1166,14 +1162,24 @@ footer{
   text-underline-offset: 8px;
   text-decoration: underline;
   font-size: 1.5rem;
+  
 }
 .footerLinks>h2{
   font-size: 0.8rem;
   cursor: pointer;
+  text-decoration: none;
+  
 }
-.footerLinks{ margin: 0 auto;
+.footerLinks{
  padding:2rem;
  font-size: 0.8rem;
+ text-decoration: none;
+ 
+}
+.footerLinks a{
+  background: black;
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width:680px){
@@ -1181,7 +1187,7 @@ footer{
     display: grid;
     padding: 0;
   }
-  .footerLinks{ margin: 0 auto;
+  .footerLinks{
     padding: 0;
     float: left;
   }
@@ -1272,4 +1278,7 @@ footer{
   border-radius: 50px;
   padding: 2rem;
 }
-/*  */
+
+.prof {
+  cursor: pointer;
+}

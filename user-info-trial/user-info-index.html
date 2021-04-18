@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Info</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      type="text/javascript"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+                  <!-- The core Firebase JS SDK is always required and must be listed first -->
+                  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+                  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script>
+              
+                  <!-- TODO: Add SDKs for Firebase products that you want to use
+                      https://firebase.google.com/docs/web/setup#available-libraries -->
+                  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+                  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+        
+        
+                  <!--------- Firebase Configurations ----------------  -->
+                  <script src="./firebaseConfig.js"></script>
+                  <script src="./registeredEvents.js"></script>
+
+    
+    <!-- Title -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+
+    <!----------------------------BootStrap -----------------------------  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/> 
+      <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  -->
+
+    <!-- footer -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./user-info-style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- For starry bg -->
+    <div id="stars"></div>
+  
+
+    <!--  -->
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="../tb.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="../index.html" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="../index.html" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="../index.html" class="scroll-link">events</a>
+              </li>
+              <li>
+                <a href="#Technofrolix" class="scroll-link">Technofrolix</a>
+              </li>
+              <li>
+                <a href="../index.html" class="scroll-link">sponsors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Title -->
+    
+    </header>
+
+
+    <!--  -->
+    
+        <!-- For starry bg -->
+        
+
+        <!--  -->
+
+    <!--  -->
+
+
+      <div class="container-fluid">
+        <div class="row margin-row">
+          <div class="col-lg-3 nopadding">
+
+            <div class="card-container nopadding">
+              <div class="card-item">
+                  <div class="card-header">
+                      <div class="card-header__bg"></div>
+                      <img  id="user-image" class="card-header__img">
+                      
+                      <div class="card-header__text">
+                          <span class="card-header__name" id="user-name">
+                              Username
+                          </span>
+                      </div>
+                  </div>
+                  <ul class="card-detail">
+                      <li class="card-detail__li">
+                          <p class="card-detail__txt">
+                              <span class="card-detail__icon post">
+                                  <i class="fas fa-clone"></i>
+                              </span><br>
+                              <span id="user-email">Your email</span>
+                          </p>
+                        
+                      </li>
+                      <li class="card-detail__li">
+                          <p class="card-detail__txt">
+                              <span class="card-detail__icon follow">
+                                 <i class="fas fa-envelope"></i>
+                              </span><br>
+                              <span id="user-college">Your college</span>
+                          </p>
+                          
+                      </li>
+                    
+                  </ul>
+                  
+              </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-9 registered-container">
+          <h3>Registered Events</h3>
+          <br>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Event Name</th>
+                <th>Registered On</th>
+                <th>Go To events</th>
+              </tr>
+            </thead>
+            <tbody id="table-content-rows">
+
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    <!-- For starry bg -->
+    </section>
+
+  
+    <!--  -->
+    <div style="z-index: 1;background: black;position: relative;">
+      <footer>
+     
+        <div class="footerLinks">
+          <h1>Get to know us</h1>
+          <h2 class="link"><a href="https://ait-techboard.github.io/hackathons/">About us</a></h2>
+          <h2 class="link"><a href="./ourTeam">Our Team</a></h2>
+          <h2 class="link"><a href="./theTheme">The Theme</a></h2>
+        </div>
+  
+        <div class="footerLinks" style="height: 149.68px;">
+          <h1>Follow us on</h1>
+          <h2 class="link"><a href="https://www.facebook.com/groups/680716451983061">Facebook</a></h2>
+          <h2 class="link"><a href="https://www.instagram.com/aittechnicalboard/">Instagram</a></h2>
+        </div>
+  
+        <div class="footerLinks">
+          <h1>Site Map</h1>
+          <h2 class="link"><a href="./index.html">Home</a></h2>
+          <h2 class="link"><a href="./register">Register</a></h2>
+          <h2 class="link"><a href="./events/index.html">Event Details</a></h2>
+          <h2 class="link"><a href="./schedule">Schedule</a></h2>
+          <h2 class="link"><a href="./index.html#sponsors" class="scroll-link">Sponsors</a></h2>
+        </div>
+      
+      </footer>
+    <div style="padding: 2rem 0;">
+      <img style="width:10rem; margin: auto;" src="../tb-bottom.png" alt="logo">
+    </div>
+
+  </div>
+
+
+    <!-- For navbar -->
+    <script src="../app.js"></script>
+    <script src="../display.js"></script>
+    <script src="../register.js"></script>
+    <!--  -->
+</html>
