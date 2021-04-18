@@ -98,7 +98,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  margin-bottom: 2rem;
+  background: #000;
 }
 .fixed-nav {
   position: fixed;
@@ -133,6 +133,8 @@ nav {
   transition: var(--transition);
   cursor: pointer;
   color: white;
+  vertical-align: middle;
+  padding-top: 0.20em;
 }
 .nav-toggle:hover {
   color: var(--clr-secondary);
@@ -172,7 +174,7 @@ nav {
   text-align: end;
 }
 
-a{
+a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -181,15 +183,65 @@ a{
   padding: 15px 20px;
   position: relative;
 }
-
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
 a:hover:after { 
   width: 100%; 
   left: 0; 
 }
 
+.loginbtn{
+  font-size: 0.5em;
+  font-family: Poppins, sans-serif;
+  display: none;
+  background: black;
+  color: white;
+  border: white solid 1px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 20px;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: var(--spacing);
+}
+
+.loginbigbtn{
+  display: none;
+}
+
+.loginsmallbtn{
+  display: unset;
+  font-size: 1em;
+  margin-right: 0.2em;
+}
+
+
+*:focus {
+  outline: 0;
+}
+
+#profimg{
+width: 50px;
+border-radius: 50px;
+padding: 2rem;
+}
+
 /* Media query for navbar in bigger screen */
 /* Navbar was made with mobile first approach */
 @media screen and (min-width: 800px) {
+  nav {
+    background: black;
+  }
   .nav-center {
     width: 90vw;
     margin: 0 auto;
@@ -203,6 +255,12 @@ a:hover:after {
   }
   .nav-toggle {
     display: none;
+  }
+  .loginsmallbtn{
+    display: none;
+  }
+  .loginbigbtn{
+    display: unset;
   }
   .links-container {
     height: auto !important;
@@ -285,6 +343,7 @@ a:hover:after {
   margin: auto;
   padding: 0;
   padding-bottom: 1rem;
+  overflow-anchor: none;
 }
 @media screen and (min-width:650px) {
   .pannel{
@@ -372,7 +431,7 @@ footer{
   font-size: 0.8rem;
   cursor: pointer;
 }
-.footerLinks{
+.footerLinks{ margin: 0 auto;
  padding:2rem;
  font-size: 0.8rem;
 }
@@ -382,7 +441,7 @@ footer{
     display: grid;
     padding: 0;
   }
-  .footerLinks{
+  .footerLinks{ margin: 0 auto;
     padding: 0;
     float: left;
   }
@@ -413,3 +472,10 @@ footer{
 *:focus {
     outline: 0;
 }
+
+.loginbtn:hover{
+  background: white;
+  color: #000;
+  cursor: pointer;
+}
+

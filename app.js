@@ -38,6 +38,8 @@ scrollLinks.forEach((link) => {
     e.preventDefault();
     // navigate to specific spot
     const id = e.currentTarget.getAttribute("href").slice(1);
+    
+    if(id!="/events/"){
     const element = document.getElementById(id);
 
     const navHeight = navbar.getBoundingClientRect().height;
@@ -59,6 +61,10 @@ scrollLinks.forEach((link) => {
     });
     // close
     linksContainer.style.height = 0;
+  }
+  else{
+    window.location.href = e.currentTarget.getAttribute("href");
+  }
   });
 });
    

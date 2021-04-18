@@ -832,6 +832,11 @@ a:hover:after {
   font-weight: bold;
   letter-spacing: var(--spacing);
 }
+.loginbtn:hover{
+  background: white;
+  color: #000;
+  cursor: pointer;
+}
 
 .loginbigbtn{
   display: none;
@@ -1166,7 +1171,7 @@ footer{
   font-size: 0.8rem;
   cursor: pointer;
 }
-.footerLinks{
+.footerLinks{ margin: 0 auto;
  padding:2rem;
  font-size: 0.8rem;
 }
@@ -1176,7 +1181,7 @@ footer{
     display: grid;
     padding: 0;
   }
-  .footerLinks{
+  .footerLinks{ margin: 0 auto;
     padding: 0;
     float: left;
   }
