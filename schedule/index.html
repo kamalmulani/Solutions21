@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen - Responsive Schedule of Events</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style.css">
+  <!--*********************************************************************-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./jq.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      type="text/javascript"
+    ></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    
+    <!-- Title -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <!--  -->
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/> 
+      <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  -->
+
+    <!-- footer -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!--*********************************************************************-->
+
+
+  </head>
+</head>
+
+<body>
+
+
+
+  <header id="home">
+    <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <picture>
+              <source media="(max-width:800px)" srcset="./tb'.png">
+              <img class="logo" src="./tb.png" alt="Flowers">
+            </picture>
+            <div>
+            <button class="loginbtn" onclick="location.href='./login/'">Register</button>
+            <img src="" class="loginsmallbtn prof">
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="https://prophet-x.github.io/Solutions21/#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="https://prophet-x.github.io/Solutions21/#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="https://prophet-x.github.io/Solutions21/#events" class="scroll-link">events</a>
+              </li>
+              <li>
+                <a href="https://prophet-x.github.io/Solutions21/#Technofrolix" class="scroll-link">Technofrolix</a>
+              </li>
+              <li>
+                <a href="https://prophet-x.github.io/Solutions21/#sponsors" class="scroll-link">sponsors</a>
+              </li>
+              <li><button class="loginbtn" onclick="location.href='./login/'">Register</button></li>
+              <li><img src="" class="loginbigbtn prof"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+  
+  <ul class="main">
+    <li class="date">
+      <div class="scrollContainer">
+        <div id="scrollElem"></div>
+        </span>
+        <div id="scrollMen">
+          <div class="clickable clicked" id="firstDate">
+            <button class="butt" id="bt1">
+              <h3>Tue</h3>
+              <p>18/05/21</p>
+            </button>
+          </div>
+
+          <div class="clickable" id="secondDate">
+            <button class="butt" id="bt2">
+              <h3>Wed</h3>
+              <p>19/05/21</p>
+            </button>
+          </div>
+
+          <div class="clickable" id="thirdDate">
+            <button class="butt" id="bt3">
+              <h3 id="firstDate">Thu</h3>
+              <p>20/05/21</p>
+            </button>
+          </div>
+
+          <div class="clickable" id="fourthDate">
+            <button class="butt" id="bt4">
+              <h3 id="firstDate">Fri</h3>
+              <p>21/05/21</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </li>
+    <li class="events" id="main-content">
+      <div class="bg appear-main" id="firstText">
+        <div class="card">
+          <div style="text-align: center;">
+            <h2><a class="ht" href="https://prophet-x.github.io/Solutions21/">Code Red</a></h2>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+          <p class="desc">
+
+          </p>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Bug Off</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Reverse<br>Coding</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">SHE-Codes</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">NANDIT</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">IMPEDENCE</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">AutoCAD</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Catia</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+          <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Valorant</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg hidden" id="secondText">
+        <div class="card">
+          <div style="text-align: center;">
+            <h2><a class="ht" href="https://prophet-x.github.io/Solutions21/">Code Red</a></h2>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+          <p class="desc">
+
+          </p>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Bug Off</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Reverse<br>Coding</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">SHE-Codes</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">NANDIT</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">IMPEDENCE</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">AutoCAD</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Catia</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+          <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Valorant</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg hidden" id="thirdText">
+        <div class="card">
+          <div style="text-align: center;">
+            <h2><a class="ht" href="https://prophet-x.github.io/Solutions21/">Code Red</a></h2>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+          <p class="desc">
+
+          </p>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Bug Off</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Reverse<br>Coding</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">SHE-Codes</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">NANDIT</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">IMPEDENCE</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">AutoCAD</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Catia</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+          <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Valorant</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg hidden" id="fourthText">
+        <div class="card">
+          <div style="text-align: center;">
+            <h2><a class="ht" href="https://prophet-x.github.io/Solutions21/">Code Red</a></h2>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+          <p class="desc">
+
+          </p>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Bug Off</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Reverse<br>Coding</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">SHE-Codes</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">NANDIT</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">IMPEDENCE</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">AutoCAD</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+            <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Catia</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div style="text-align: center;">
+          <h3><a class="ht" href="https://prophet-x.github.io/Solutions21/">Valorant</a></h3>
+            <h5 class="tme">( 2:00 pm )</h5>
+          </div>
+        </div>
+      </div>
+
+    </li>
+  </ul>
+
+
+
+  <!-- <div style="z-index: -1;background: black;position: relative;"> -->
+    <footer>
+     
+      <div class="footerLinks">
+        <h1>Get to know us</h1>
+        <h2 class="link"><a href="https://ait-techboard.github.io/hackathons/">About us</a></h2>
+        <h2 class="link"><a href="./ourTeam">Our Team</a></h2>
+        <h2 class="link"><a href="./theTheme">The Theme</a></h2>
+      </div>
+
+      <div class="footerLinks" style="height: 149.68px;">
+        <h1>Follow us on</h1>
+        <h2 class="link"><a href="https://www.facebook.com/groups/680716451983061">Facebook</a></h2>
+        <h2 class="link"><a href="https://www.instagram.com/aittechnicalboard/">Instagram</a></h2>
+      </div>
+
+      <div class="footerLinks">
+        <h1>Site Map</h1>
+        <h2 class="link"><a href="./index.html">Home</a></h2>
+        <h2 class="link"><a href="./register">Register</a></h2>
+        <h2 class="link"><a href="./events/index.html">Event Details</a></h2>
+        <h2 class="link"><a href="./schedule">Schedule</a></h2>
+        <h2 class="link"><a href="./index.html#sponsors" class="scroll-link">Sponsors</a></h2>
+      </div>
+    
+    </footer>
+    <div style="padding: 2rem 0; background-color: black;">
+      <img style="width:10rem; margin: auto;" src="./tb-bottom.png" alt="logo">
+    </div>
+  <!-- </div> -->
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+  <script src="./app.js"></script>
+  <script src="./jq.js"></script>
+</body>
+
+</html>

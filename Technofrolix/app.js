@@ -39,7 +39,7 @@ scrollLinks.forEach((link) => {
     // navigate to specific spot
     const id = e.currentTarget.getAttribute("href").slice(1);
     
-    if(id!="/events" && id!="/Technofrolix"){
+    if(id!="/events/"){
     const element = document.getElementById(id);
 
     const navHeight = navbar.getBoundingClientRect().height;

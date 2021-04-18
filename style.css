@@ -850,7 +850,7 @@ a:hover:after {
 
 /* Media query for navbar in bigger screen */
 /* Navbar was made with mobile first approach */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   nav {
     background: transparent;
   }
@@ -1267,9 +1267,8 @@ footer{
     outline: 0;
 }
 
-#profimg{
-  width: 50px;
-  border-radius: 50px;
-  padding: 2rem;
+.prof:hover{
+  cursor: pointer;
+  border: white solid 1px;
 }
 /*  */

@@ -238,7 +238,7 @@ padding: 2rem;
 
 /* Media query for navbar in bigger screen */
 /* Navbar was made with mobile first approach */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   nav {
     background: black;
   }

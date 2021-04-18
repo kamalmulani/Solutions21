@@ -14,6 +14,7 @@
           firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
                 console.log("Successfully logged in!!")
+                window.location.href = "../user";
             } else {
             console.log("Not logged in!!")
             }
@@ -38,7 +39,7 @@
                         saveuserdata(uid,name,email, college,"www.google.com","fromEmail");
                         }, function(error) {
                         console.log(error);
-                        alert(error);
+                        alert_creator(error);
                         });
                     }, function(error) {
                             // Handle Errors here.
@@ -77,6 +78,7 @@
               {
                 alert_creator("Successfully logged in")
                   console.log("registered with google")
+                  
               }
               else{
                 logout();
@@ -115,7 +117,8 @@
               db.collection("users").doc(user.uid)
       .get().then((doc) => {
           if (doc.exists) {
-              console.log("Document data:", doc.data())
+              console.log("Document data:", doc.data());
+              
              
           } else {
               // doc.data() will be undefined in this case

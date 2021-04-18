@@ -76,7 +76,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     } else {
   
       console.log("Not logged in!!")
-      document.getElementById("register-button-anchor").href = "http://127.0.0.1:5501/index.html"
+      document.getElementById("register-button-anchor").href = "../../login/"
   
   
     }
