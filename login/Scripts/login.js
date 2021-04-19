@@ -36,7 +36,7 @@
                         console.log("Email Sent Succesfully!!!");
                         alert_creator("Verification Link sent!! Check your email");
                         var uid = user.uid;
-                        saveuserdata(uid,name,email, college,"www.google.com","fromEmail");
+                        saveuserdata(uid,name,email, college,"https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg","fromEmail");
                         }, function(error) {
                         console.log(error);
                         alert_creator(error);
