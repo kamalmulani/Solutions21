@@ -50,7 +50,7 @@ var eventDetails = [
     teamSize:  "2 ",
     descriptionUp:  "See Logic in everything around you? Your Daily Grammar is syntax? Algorithms and Flowcharts cloud your brain? Love to solve new and challenging problems? If your answer is a yes, then believe you me you have landed at the right place. CODIFICA is just the right kind of event for you.",
     paragraph:  "The event will be held in two levels: -<br> <b><i>Junior Level</i> </b>  –  FE-SE <br> <b><i>Senior Level</i></b> – TE-BE <br> For each level there will be two rounds. <br> <b>Round 1:</b> <br> First round of both the formats will be of multiple choice questions round based on C/C++.<br> Number of Questions:  20<br> Time Allotted:  30 min <br> <b>Round 2:</b> <br> 1. The teams in the final round will be the selected teams from the first round.<br>  2. Programming problems have to be solved on computer.<br> 3. Each team will be provided one computer only. <br> 4. Second round will be hosted on Codechef and all programs will be run and compiled online.",
-    descriptionDown:  "<b>RULES:</b>  to be added",
+    descriptionDown:  "<b>RULES:</b>  ",
   },
 
   { id: 1,
@@ -62,7 +62,7 @@ var eventDetails = [
     teamsize: "2",
     descriptionUp: "If you are as clever as you can be when you write it, how will you ever debug it?  If you think you have a sharp eye and instincts then come and detonate the bombs and bugs from our code. The mission is on you are on your own now.You'll be given a set of C/C++ programs containing subtle bugs which may be having serious side effects. All you have to do is spot them. Bring out the Bug!!",
     paragraph: "<b>Round 1: </b><br> 1. Here the teams will have to find the bugs in 20 small codes in notepad file. No compiler will be provided.<br> 2. This round will be for 30 minutes.<br> 3. +2 marks for each error or warning detection with reason and +1 for only error detection.<br> 4. -1 for incorrect error detection and no negative marking if any error is not detected.<br> 5. There will be no logical errors.<br> <b>Round 2:</b> <br> 1. In this the top 10 teams will debug the 2 full programs given to them.<br> 2. This round will be for 2hrs.<br> 3. Only logical error to be detected.<br> 4.  For each error detection+1 mark will be given.<br> 5. +20 mark if the code runs correctly with proper output.<br> 6. In case of a tie, timing will be considered.",
-    descriptionDown: "<b>RULES: </b> to be added",
+    descriptionDown: "<b>RULES: </b> ",
 
   },
 
@@ -75,7 +75,7 @@ var eventDetails = [
     teamsize: "2",
     descriptionUp: "Reverse engineering ranks highly among the programming Dark Arts. Obtaining the original source code from a program you're given gives you the power to do... pretty much anything. Here at Retracer, we let you exercise this power to achieve the glory that awaits you.",
     paragraph: "Round 1:  <br> 1. First round consists of MCQs which can be solved by coding.<br> 2. Time allotted:  30 min<br> <br> Round 2:  <br> 1. The teams in the final round will be the selected from the first round.<br> 2. Participants have to write the code for pattern that maps input to output.<br> 3. Each team will be provided one computer only.",
-    descriptionDown: "<b>RULES:</b>  to be added",
+    descriptionDown: "<b>RULES:</b>  ",
     
   },
 
@@ -84,11 +84,11 @@ var eventDetails = [
     img: "./image/coding.png",
     date: "To be declared",
     time: "To be declared",
-    prizeWorth: "to be added",
-    teamsize: "to be added",
-    descriptionUp: "to be added",
-    paragraph: "to be added",
-    descriptionDown: "<b>RULES:</b>  to be added",
+    prizeWorth: "",
+    teamsize: "",
+    descriptionUp: "COMMING SOON",
+    paragraph: "",
+    descriptionDown: "<b>RULES:</b>  ",
 
   },
 
@@ -101,7 +101,7 @@ var eventDetails = [
     teamsize: "2",
     descriptionUp: "Do you consider yourself as sharp or snappy? Do you always decide things instantly in Boolean? How often you use the words - True or False or for that matter, Yes or No?<br> If you are astounded, you just have the passion for Boolean digital circuits which needs to be unleashed and we give you the right platform. Scrutinize problems and arrive at a solution with <br> Just two magical numbers 0 and 1. If you think you are trained enough to go through the Boolean drills then suit up and get ready to face the bombs.",
     paragraph: "<b>ELIMINATIONS –</b><br> 1.	All the teams have to first pass the hurdle of elims.<br> 2.	It will be a written test of simple multiple choice questions to assess participant's general aptitude and digital logic knowledge <br> 3.	There will be 40 MCQs on the basics of digital logic, DLD & DELD to be solved in 30 mins.<br><b> FINALS –</b><br> 1.	Here the top 8 teams from the first round will be provided with the problem statements which are to be implemented on the digital logic kits.<br> 2.	Time for this round will be  90 minutes. <br> 3.	The questions will be preferably from the basics of digital logic, DLD & DELD.<br> 4.	No of questions : 3.<br> 5.	Time bonus will be considered for tie-breaking between two or more teams.",
-    descriptionDown: "<b>RULES:</b>  to be added",
+    descriptionDown: "<b>RULES:</b>  ",
 
   },
 
@@ -124,7 +124,7 @@ var eventDetails = [
     date: "To be declared",
     time: "To be declared",
     prizeWorth: "6000Rs",
-    teamsize: "To be added",
+    teamsize: "",
     descriptionUp: "This event tests your skills in designing and modelling. Show your imagination and creativity at designing to become the ultimate CHAMPION. ",
     paragraph: "	The event will have 3 rounds <br> a.	<b>First Round - </b>MCQ round based on SOLIDWORKS software.<br> b.	<b>Second Round -</b> Drawing the missing parts of given assembly and do the complete assembly. <br> c.<b>	Third Round – </b>A real life problem will be given and one has to use their creativity to design an innovative product.",
     descriptionDown: "<b>RULES:</b>  <br>1.	Round 1 is a qualifying round to be able to compete in the second round. <br>2.	10 teams will qualify for the second round. The final result will be a cumulative score of the second and third rounds. <br>3.	A team can consist of maximum 2 participants who may be from different colleges. <br>4.	The decision of the judges and event heads shall be considered final and binding to all. Any participants found misbehaving will be immediately disqualified. <br>5.	Only UG students are allowed to participate and should carry original, valid college ID and registration receipt of the event. <br>6.	Participants should be present 30 minutes prior to the commencement of event.<br>7.	The rules may be changed before the commencement of the event based on the discretion of the organisers. ",
@@ -151,7 +151,7 @@ var eventDetails = [
     time: "To be declared",
     prizeWorth: "5000Rs",
     teamsize: "5",
-    descriptionUp: "",
+    descriptionUp: "COMMING-SOON",
     paragraph: "",
     descriptionDown: "",
 
@@ -165,7 +165,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING-SOON",
   paragraph: "",
   descriptionDown: "",
 
@@ -178,7 +178,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING-SOON",
   paragraph: "",
   descriptionDown: "",
 },
@@ -190,7 +190,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING-SOON",
   paragraph: "",
   descriptionDown: "",
 
@@ -203,7 +203,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING-SOON",
   paragraph: "",
   descriptionDown: "",
 },
@@ -215,7 +215,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING-SOON",
   paragraph: "",
   descriptionDown: "",
 
@@ -228,7 +228,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING-SOON",
   paragraph: "",
   descriptionDown: "",
 
@@ -241,7 +241,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING-SOON",
   paragraph: "",
   descriptionDown: "",
 
@@ -254,7 +254,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING SOON",
   paragraph: "",
   descriptionDown: "",
 
@@ -280,7 +280,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "5000Rs",
   teamsize: "1",
-  descriptionUp: "",
+  descriptionUp: "COMMING SOON",
   paragraph: "",
   descriptionDown: "<b>RULES:</b><br> Topics will be given 3 days before submission.<br> 1.	One person can give only one entry.<br> 2.	Every entry must have one photo in digital form along with a short essay (not more than 200 words) on the photo <br> 3.	The minimum resolution of the pictures should be 1000 pixels on the shorter side. <br> 4.	Images should not exceed 16 MB in size.<br> 5.	Stitched panoramas are allowed.<br> 6.	The photo should not have been previously entered in any competition/exhibition.<br> 7.	Plagiarism should be strictly avoided and such photographs shall be immediately disqualified from the competition.<br> 8.	There must not be any watermarks, copyright marks or any text/graphic on the picture.<br> 9.	Please limit your adjustment to minor changes of cropping. Please do not manipulate the picture with any kind of filters, dodges or color changes. If any kind of manipulation with the picture is found will lead to disqualification. <br> 10.	The participant should be ready with the original image when asked upon by the organizers.<br> 11.	Judging by judges will be done on: <br> i.	Relevance<br> ii.	Quality <br> iii.	Vista<br> iv.	Essa<br> 12.	There will be separate voting on a social media platform at a later stage.<br> 13.	Any violation of rule will strictly lead to disqualification.",
 
@@ -293,7 +293,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING SOON",
   paragraph: "",
   descriptionDown: "",
 
@@ -306,7 +306,7 @@ var eventDetails = [
   time: "To be declared",
   prizeWorth: "",
   teamsize: "",
-  descriptionUp: "",
+  descriptionUp: "COMMING SOON",
   paragraph: "",
   descriptionDown: "",
 
@@ -317,11 +317,11 @@ var eventDetails = [
   img: "./image/coding.png",
   date: "To be declared",
   time: "To be declared",
-  prizeWorth: "to be added",
-  teamsize: "to be added",
-  descriptionUp: "to be added",
-  paragraph: "to be added",
-  descriptionDown: "to be added",
+  prizeWorth: "",
+  teamsize: "",
+  descriptionUp: "COMMING SOON",
+  paragraph: "",
+  descriptionDown: "",
 
 },
 
@@ -330,11 +330,11 @@ var eventDetails = [
   img: "./image/coding.png",
   date: "To be declared",
   time: "To be declared",
-  prizeWorth: "to be added",
-  teamsize: "to be added",
-  descriptionUp: "to be added",
-  paragraph: "to be added",
-  descriptionDown: "to be added",
+  prizeWorth: "",
+  teamsize: "",
+  descriptionUp: "COMMING SOON",
+  paragraph: "",
+  descriptionDown: "",
 
 },
 
@@ -343,11 +343,11 @@ var eventDetails = [
   img: "./image/coding.png",
   date: "To be declared",
   time: "To be declared",
-  prizeWorth: "to be added",
-  teamsize: "to be added",
-  descriptionUp: "to be added",
-  paragraph: "to be added",
-  descriptionDown: "to be added",
+  prizeWorth: "",
+  teamsize: "",
+  descriptionUp: "COMMING SOON",
+  paragraph: "",
+  descriptionDown: "",
 
 },
 
@@ -356,11 +356,11 @@ var eventDetails = [
   img: "./image/coding.png",
   date: "To be declared",
   time: "To be declared",
-  prizeWorth: "to be added",
-  teamsize: "to be added",
-  descriptionUp: "to be added",
-  paragraph: "to be added",
-  descriptionDown: "to be added",
+  prizeWorth: "",
+  teamsize: "",
+  descriptionUp: "COMMING SOON",
+  paragraph: "",
+  descriptionDown: "",
 
 }
 
@@ -407,7 +407,7 @@ window.addEventListener("DOMContentLoaded", function () {
             </h1>
             <div class="TimeAddress">
               <br>
-              <b><u>Date</u> </b>: ${data.date}<br><b><u> Time</b></u> : ${data.time}<br> <b><u>Prize Worth</b></u> : ${data.prizeWorth}<br> <b><u>Team Size</b></u> : ${data.teamSize}</div>
+              <b class="detailsH">Date </b>: ${data.date}<br><b class="detailsH"> Time</b> : ${data.time}<br> <b class="detailsH">Prize Worth</b> : ${data.prizeWorth}<br> <b class="detailsH">Team Size</b> : ${data.teamSize}</div>
           </div>
           <br>
           <div class="description">

@@ -1178,6 +1178,7 @@ footer{
 .footerLinks{
  padding:2rem;
  font-size: 0.8rem;
+ margin: 0 auto;
 }
 
 @media screen and (max-width:680px){
@@ -1267,6 +1268,10 @@ footer{
   }
 }
 
+a:hover{
+  color: unset;
+  text-decoration: dotted;
+}
 
 
 #profimg{

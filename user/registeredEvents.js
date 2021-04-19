@@ -5,6 +5,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         firebase.firestore().collection("users").doc(user.uid)
         .get().then((doc) => {
             if (doc.exists) {
+                document.getElementById("mainContent").style.display = "unset";
                 console.log("Document data:", doc.data());
                 addProfileData(doc.data());
                 addRegisteredEvents(user.uid);

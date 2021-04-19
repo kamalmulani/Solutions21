@@ -59,6 +59,18 @@ var chosenEvent = eventArray[eventId];
 var currentDate = new Date();
 
 
+function alert_creator(msg){
+  data = '<div class="alert alert-warning alert-dismissible " role="alert" > ' +
+         msg + 
+        '<button type="button" class="close" data-dismiss="alert" aria-label="Close" id="cls-alrt"> \
+          <span aria-hidden="true">&times;</span> \
+        </button> \
+      </div>'
+  $("#alert_container").html(data);
+  document.getElementById("cls-alrt").onclick = function(){
+    $("#alert_container").html("");
+  }
+}
 
 //Check for login state
 firebase.auth().onAuthStateChanged(function(user) {
@@ -75,7 +87,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   
     } else {
   
-      console.log("Not logged in!!")
+      console.log("Not logged in!!");
       document.getElementById("register-button-anchor").href = "../../login/"
   
   
@@ -99,6 +111,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     })
     .catch((error) => {
         console.error("Error adding document: ", error);
+        alert_creator("OYE! You have Already Regestered for this event");
     });
   
   }
@@ -122,9 +135,11 @@ firebase.auth().onAuthStateChanged(function(user) {
               })
               .then(() => {
                   console.log("Document written with ID: ", uid);
+                  alert_creator("Successfully Regestered for the event.");
               })
               .catch((error) => {
                   console.error("Error adding document: ", error);
+                  alert_creator("Regestration Unsuccessful. Check if your are already regestered for this event or contact the organizers");
               });
   
           } else {
@@ -133,6 +148,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           }
       }).catch((error) => {
           console.log("Error getting document:", error);
+          alert_creator("Regestration Unsuccessful. Check if your are already regestered for this event or contact the organizers");
       });
   
   }

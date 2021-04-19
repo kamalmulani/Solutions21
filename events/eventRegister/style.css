@@ -23,8 +23,7 @@ body {
 
 @media screen and (max-width: 920px) {
   .main-content {
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-left: 2rem;
   }
 }
 
@@ -113,7 +112,15 @@ event-image img {
 
 .TimeAddress {
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 24px;
+  
+  text-underline-offset: 3px;
+
+}
+
+.detailsH{
+  color: #22A7F0;
+  line-height: 2;
 }
 
 #title {
@@ -1279,6 +1286,7 @@ footer {
 .footerLinks {
   padding: 2rem;
   font-size: 0.8rem;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 680px) {
@@ -1289,6 +1297,7 @@ footer {
   .footerLinks {
     padding: 0;
     float: left;
+    
   }
   .footerLinks > h1 {
     font-size: 1em;
@@ -1470,4 +1479,34 @@ h2 {
   background: white;
   color: #000;
   cursor: pointer;
+}
+
+.prof:hover{
+  cursor: pointer;
+  border: white solid 1px;
+}
+
+#alert_container {
+  margin: 0 auto;
+  width: 80%;
+  position: sticky;
+  top: 5rem;
+  z-index: 5;
+
+}
+
+.alert-warning{
+  background: rgb(12 0 40);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: white solid 1px;
+}
+
+#cls-alrt{
+  padding: 2px 10px;
+  background: #f9f9f9;
+  border: black solid 1px;
+  border-radius: 10px;
 }

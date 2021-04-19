@@ -14,7 +14,7 @@
           firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
                 console.log("Successfully logged in!!")
-                window.location.href = "../user";
+                window.history.back();;
             } else {
             console.log("Not logged in!!")
             }

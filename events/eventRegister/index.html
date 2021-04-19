@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
-    <title>CODM</title>
+    <title>SOLUTIONS</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
       type="text/javascript"
@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Title -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
@@ -73,8 +73,8 @@
               <img class="logo" src="./tb.png" alt="Flowers">
             </picture>
             <div>
-            <button class="loginbtn" onclick="location.href='../login/'">Register</button>
-            <img src="" class="loginsmallbtn prof">
+            <button class="loginbtn" onclick="location.href='../../login/'">Register</button>
+            <img src="" class="loginsmallbtn prof" onclick="location.href='../../user'">
             <button class="nav-toggle">
               <i class="fas fa-bars"></i>
             </button>
@@ -93,13 +93,13 @@
                 <a href="../index.html" class="scroll-link">events</a>
               </li>
               <li>
-                <a href="#Technofrolix" class="scroll-link">Technofrolix</a>
+                <a href="../../Technofrolix" class="scroll-link">Technofrolix</a>
               </li>
               <li>
                 <a href="../../index.html#sponsors" class="scroll-link">sponsors</a>
               </li>
-              <li><button class="loginbtn" onclick="location.href='../login/'">Register</button></li>
-              <li><img src="" class="loginbigbtn prof"></li>
+              <li><button class="loginbtn" onclick="location.href='../../login/'">Register</button></li>
+              <li><img src="" class="loginbigbtn prof" onclick="location.href='../../user'"></li>
             </ul>
           </div>
         </div>
@@ -110,9 +110,11 @@
 
 
     <!--  -->
-    
+    <body>
         <!-- For starry bg -->
-        
+        <div id="alert_container">
+       
+        </div>
 
         <!--  -->
 
@@ -170,31 +172,31 @@
     <!-- For starry bg -->
     <div id="stars"></div>
 
-  
+  </body>
     <!--  -->
     <div style="z-index: 1;background: black;position: relative;">
     <footer>
      
       <div class="footerLinks">
         <h1>Get to know us</h1>
-        <h2 class="link"><a>About us</a></h2>
-        <h2 class="link"><a>Our Team</a></h2>
-        <h2 class="link"><a>The Theme</a></h2>
+        <h2 class="link"><a href="https://ait-techboard.github.io/hackathons/">About us</a></h2>
+        <h2 class="link"><a href="../../ourTeam">Our Team</a></h2>
+        <h2 class="link"><a href="../../theTheme">The Theme</a></h2>
       </div>
 
       <div class="footerLinks" style="height: 149.68px;">
         <h1>Follow us on</h1>
-        <h2 class="link"><a>Facebook</a></h2>
-        <h2 class="link"><a>Instagram</a></h2>
+        <h2 class="link"><a href="https://www.facebook.com/groups/680716451983061">Facebook</a></h2>
+        <h2 class="link"><a href="https://www.instagram.com/aittechnicalboard/">Instagram</a></h2>
       </div>
 
       <div class="footerLinks">
         <h1>Site Map</h1>
-        <h2 class="link"><a>Home</a></h2>
-        <h2 class="link"><a>Register</a></h2>
-        <h2 class="link"><a>Event Details</a></h2>
-        <h2 class="link"><a>Schedule</a></h2>
-        <h2 class="link"><a>Sponsors</a></h2>
+        <h2 class="link"><a href="../../index.html">Home</a></h2>
+       
+        <h2 class="link"><a href="../">Event Details</a></h2>
+        <h2 class="link"><a href="../../schedule">Schedule</a></h2>
+        <h2 class="link"><a href="../../index.html#sponsors" class="scroll-link">Sponsors</a></h2>
       </div>
     
     </footer>

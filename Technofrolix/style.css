@@ -1567,3 +1567,8 @@
     }
    
   }
+
+  .prof:hover{
+    cursor: pointer;
+    border: white solid 1px;
+  }
