@@ -14,7 +14,7 @@
           firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
                 console.log("Successfully logged in!!")
-                window.history.back();;
+               
             } else {
             console.log("Not logged in!!")
             }
@@ -76,8 +76,9 @@
               console.log("Document written with ID: ", uid);
               if(flag=="fromGoogle")
               {
-                alert_creator("Successfully logged in")
-                  console.log("registered with google")
+                alert_creator("Successfully logged in");
+                  console.log("registered with google");
+		 window.history.back();
                   
               }
               else{
