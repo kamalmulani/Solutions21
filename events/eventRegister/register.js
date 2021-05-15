@@ -112,6 +112,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     .catch((error) => {
         console.error("Error adding document: ", error);
         alert_creator("OYE! You have Already Regestered for this event");
+        
     });
   
   }
@@ -136,6 +137,9 @@ firebase.auth().onAuthStateChanged(function(user) {
               .then(() => {
                   console.log("Document written with ID: ", uid);
                   alert_creator("Successfully Regestered for the event.");
+                  if(eventId == 10){
+                    window.open('https://forms.gle/sQLLLpwSQSK8uGNM9', '_blank');
+                  }
               })
               .catch((error) => {
                   console.error("Error adding document: ", error);

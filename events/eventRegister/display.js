@@ -206,7 +206,7 @@ time: "To be declared",
 prizeWorth: "5000/-",
 teamsize: "1",
 descriptionUp: "",
-paragraph: "<b>About the event :</b> <br>1. You will be given 20 aptitude questions and 20 unknowns in the sudoku.<br> 2. You need to solve the aptitude questions and for each aptitude question, you will get a value from 1 to 9. <br> 3. If you solve the (A) question from the aptitude section then you need to substitute the value of (A) in the sudoku, similarly, you have to solve 20 questions and replace all the unknowns in the sudoku. <br> 4. After replacing all the unknowns in the sudoku now you are ready to solve the sudoku. <br> 5. After solving sudoku upload the photo in the form itself or mail it to <a href = >mathsclubait@gmail.com</a><br>Scoring : <br> 6. Marking scheme : +4, -1<br> 7. If scores are the same, the one who took less time to submit the answers will be considered the winner.",
+paragraph: "<b>About the event :</b> <br>1. You will be given 20 aptitude questions and 20 unknowns in the sudoku.<br> 2. You need to solve the aptitude questions and for each aptitude question, you will get a value from 1 to 9. <br> 3. If you solve the (A) question from the aptitude section then you need to substitute the value of (A) in the sudoku, similarly, you have to solve 20 questions and replace all the unknowns in the sudoku. <br> 4. After replacing all the unknowns in the sudoku now you are ready to solve the sudoku. <br> 5. After solving sudoku upload the photo in the form itself or mail it to <a href = 'mailto:mathsclubait@gmail.com'>mathsclubait@gmail.com</a><br>Scoring : <br> 6. Marking scheme : +4, -1<br> 7. If scores are the same, the one who took less time to submit the answers will be considered the winner.",
 descriptionDown: "",
 },
 
