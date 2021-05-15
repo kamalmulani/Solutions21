@@ -26,21 +26,24 @@ var eventArray = [
   "photoshop event for poster", // 16
   "Ad making" , // 17
   "photography", // 18
-  "Tech storm", // 26
 
 
-  "Robotics club event 1",  // 19
-  "Robotics club event 2", // 20
-  "Robotics club event 3", // 21
-  "Robotics club event 4", // 25
+  "SCINTILLA-IGNITING MINDS",  // 19
+  "ABHIKALPNA :BUDDY LOVE THE WAY YOU DESIGN", // 20
+  "QUIZOTICS", // 21
+  
 
 
-  "E -cell event 1", // 22
-  "E -cell event 2", // 23
+  "Innovation Challenge: A Day in a Startup", // 22
+  "Startup Challenge: A Day in a Startup", // 23
 
 
-  "ISDF event 1", // 24
+  "ByPass CTF", // 24
+
+  "TROUBLESHOOTING THE ENCLOSURE", // 25
+  "TECHSTORM", // 26
  ];
+
 
 //getting course params 
 function getUrlVars() {
