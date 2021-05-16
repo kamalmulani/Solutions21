@@ -84,7 +84,26 @@ firebase.auth().onAuthStateChanged(function(user) {
         console.log("Successfully logged in!!")
   
         document.getElementById("register-button-anchor").onclick = function() {
-          addEventToDatabase(user.uid)
+          if(eventId == 10){
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSd5v0-BsYRNgUdBSDWbzh5nsy9cZD6VQykkk42fGTQHHD2bnw/viewform?usp=sf_link', '_blank');
+          }
+          else if(eventId == 9){
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSelQtRiAdadKpaQxw36lM7BEivaDaqwIlERUwor5ZfMrVJOvA/viewform?usp=sf_link', '_blank');
+          
+          }
+          else if(eventId == 11){
+            window.open('https://forms.gle/QSn8z1HYNwCSZPY8A', '_blank');
+          
+          }
+          else if(eventId == 22){
+            window.open('https://forms.gle/m7dGdhTLtZVPkSKLA', '_blank');            
+          }
+          else if(eventId == 23){
+            window.open('https://forms.gle/6mup2zEDvb6v8QMQ9', '_blank');            
+         
+          }
+          addEventToDatabase(user.uid);
+
         };
   
   
@@ -115,7 +134,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     })
     .catch((error) => {
         console.error("Error adding document: ", error);
-        alert_creator("OYE! You have Already Regestered for this event");
+        alert_creator("OYE! You have Already Registered for this event");
         
     });
   
@@ -140,10 +159,8 @@ firebase.auth().onAuthStateChanged(function(user) {
               })
               .then(() => {
                   console.log("Document written with ID: ", uid);
-                  alert_creator("Successfully Regestered for the event.");
-                  if(eventId == 10){
-                    window.open('https://forms.gle/sQLLLpwSQSK8uGNM9', '_blank');
-                  }
+                  alert_creator("Successfully Registered for the event.");
+                  
               })
               .catch((error) => {
                   console.error("Error adding document: ", error);
