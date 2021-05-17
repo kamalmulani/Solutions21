@@ -178,11 +178,10 @@
     color: white;
     font-size: 1rem;
     line-height: 1.5em;
-    text-align: justify;
-    margin: 1% 0 0 0;
+    text-align: left;
+    padding:5px;
     overflow: hidden;
     word-break: break-word;
-    text-align: left;
   }
  
 
@@ -1088,126 +1087,7 @@
   }
   /*  */
   
-  /* Events Page */
-  .title h2 {
-    padding: 1rem;
-  }
-  .section {
-    text-align: center;
-    margin: 1rem auto;
-  }
-  
-  .section .pdiv{
-    margin:auto;
-    width: 80%;
-  }
-  .section p {
-    text-align: left;
-    padding: 2rem;
-    font-size: 1rem;
-  
-  }
-  #events{
-    position: relative;
-    z-index: 80;
-  }
-  
-  .container {
-    display: grid;
-    width: 90vw;
-    grid-template-columns: 25% 25% 25% 25%;
-    margin: auto;
-  }
-  .card-1 {
-    background-image: url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y29kZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(93, 47, 72, 0.2);
-    background-blend-mode: lighten;
-  }
-  .card-2 {
-    background-image: url("https://th.bing.com/th/id/OIP._hxV2PYmygHQslycyuViAAHaE7?w=231&h=180&c=7&o=5&dpr=1.5&pid=1.7");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(7, 24, 69, 0.2);
-    background-blend-mode: lighten;
-  }
-  .card-3 {
-    background-image: url("https://images.unsplash.com/photo-1585166059782-f28143545183?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVjaGFuaWNhbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.137);
-    background-blend-mode: lighten;
-  }
-  .card-4 {
-    background-image: url("https://images.unsplash.com/photo-1462041866295-e4af004a32ef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(192, 120, 78, 0.2);
-    background-blend-mode: lighten;
-  }
-  .card-5 {
-    background-image: url("https://images.unsplash.com/photo-1539627831859-a911cf04d3cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(192, 120, 78, 0.2);
-    background-blend-mode: lighten;
-  }
-  .card-6{
-    background-image: url("https://2.bp.blogspot.com/-GvhqazxU4KM/T6d2RlelDMI/AAAAAAAAAgs/l2cmSCygxWA/s1600/line-tracer-mikro.jpg");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(192, 120, 78, 0.2);
-    background-blend-mode: lighten;
-  }
-  .card-7{
-    background-image: url("https://sbecouncil.org/wp-content/uploads/2019/10/entrepreneurship-1-e1570491993225.jpg");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(192, 120, 78, 0.2);
-    background-blend-mode: lighten;
-  }
-  .card-8{
-    background-image: url("https://th.bing.com/th/id/Rb21887691c40e420f1ab3acbca8aad92?rik=0II9zu6b3rouGQ&riu=http%3a%2f%2fcybersecurityventures.com%2fwp-content%2fuploads%2f2018%2f04%2fphotodune-21732180-diverse-computer-hacking-shoot-BW.jpg&ehk=Hu64uBoCM4rSzbl5aHWgIJ%2fTfWaUZ63orrhmaJDEQMA%3d&risl=&pid=ImgRaw");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(192, 120, 78, 0.2);
-    background-blend-mode: lighten;
-  }
-  .card {
-    width: 80%;
-    height: 30vh;
-    margin: 2rem auto;
-    /* background-image: url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y29kZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(115, 222, 255, 0.137);
-    background-blend-mode: lighten; */
-    text-align: center;
-    /* border-radius: 1rem; */
-    display: flex;
-    align-items: center;
-    transition: 0.5s ease;
-    cursor: pointer;
-  }
-  .card h1 {
-    display: inline-block;
-    margin: auto auto;
-    color: white;
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
-    
-    
-  }
-  #events{
-    background: #090a0fcb;
-    
-  }
-  .card:hover {
-    transform: scale(1.1);
-    border-radius: 1rem;
-  }
+
   /*  */
   .link-event {
     display: flex;
@@ -1488,17 +1368,36 @@
      
   }
 
+  .rgst_btn a:after {    
+    background: none repeat scroll 0 0 ;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .actionButton:hover
+  {
+    background: rgba(242, 61, 85, 0.783);
+
+  }
+
   @media screen and (max-width: 800px) {
 
     .Cover_image {
         height: 80%;
         width: 100%;
+        padding: 2% 2% 2% 2%;
       }
 
     .techno_desc {
     color: white;
     font-size: 1rem;
-    margin: 3%;
     align-items: flex-start;
     }
 
@@ -1512,7 +1411,7 @@
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        padding: 2.5rem 1.5rem;
+        padding: 1rem 0.1rem;
       }
 
     .Second_Section {
@@ -1549,10 +1448,10 @@
     }
 
     .Desc {
-        display: flex;
-      padding: 3vw;
+      display: flex;
+      padding: 5px;
       flex-direction: column;
-      width: 80%;
+      width: 100%;
     }
 
     .techno_title {
@@ -1564,6 +1463,19 @@
         margin-top: 10%;
         width: 50%;
         margin-bottom: 0%;
+    }
+    
+     .rgst_btn a:after {    
+      background: none repeat scroll 0 0 ;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
     }
    
   }
